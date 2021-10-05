@@ -10,7 +10,7 @@ namespace AirportNavigationApp.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
+            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://discord.gg/zg8XGtMx"));
         }
 
         public ICommand OpenWebCommand { get; }

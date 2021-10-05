@@ -2148,11 +2148,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.Android\\AirportNavigationApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.Android\\AirportNavigationApp.Android.csproj",
       "projectName": "AirportNavigationApp.Android",
-      "projectPath": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.Android\\AirportNavigationApp.Android.csproj",
+      "projectPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.Android\\AirportNavigationApp.Android.csproj",
       "packagesPath": "C:\\Users\\isitg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2173,8 +2173,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj": {
-              "projectPath": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj"
+            "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj": {
+              "projectPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj"
             }
           }
         }

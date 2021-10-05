@@ -540,11 +540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
+      "projectUniqueName": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
       "projectName": "AirportNavigationApp",
-      "projectPath": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
+      "projectPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
       "packagesPath": "C:\\Users\\isitg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\obj\\",
+      "outputPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

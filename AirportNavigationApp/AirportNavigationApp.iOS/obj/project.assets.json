@@ -997,11 +997,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\AirportNavigationApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\AirportNavigationApp.iOS.csproj",
       "projectName": "AirportNavigationApp.iOS",
-      "projectPath": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\AirportNavigationApp.iOS.csproj",
+      "projectPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\AirportNavigationApp.iOS.csproj",
       "packagesPath": "C:\\Users\\isitg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1022,8 +1022,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj": {
-              "projectPath": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj"
+            "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj": {
+              "projectPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj"
             }
           }
         }

@@ -142,4 +142,7 @@
       <Name>AirportNavigationApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\toy_plane.png" />
+  </ItemGroup>
 </Project>

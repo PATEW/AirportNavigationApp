@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7yCsWGqX9ctmu7kuZELrnYy7HeJ907bYpaQAn+u1LU77cN9PtTQKuqf4gN9WemQxrYrStqw2jqvgzzt+n0NYPQ==",
+  "dgSpecHash": "J+FlqogI0hFmTNtb8eUIfx1jNLnJFEm/ZBC20GDIRAvcju/S8wrdmc08d9dxWBy3Gjygy2v9ey4qkQYIC3wHVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\isitg\\OneDrive\\Documents\\GitHub\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.Android\\AirportNavigationApp.Android.csproj",
+  "projectFilePath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.Android\\AirportNavigationApp.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\isitg\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
