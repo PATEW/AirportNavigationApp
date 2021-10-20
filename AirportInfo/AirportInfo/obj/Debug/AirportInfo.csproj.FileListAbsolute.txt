@@ -1,0 +1,7 @@
+C:\Users\otfme\source\repos\AirportInfo\AirportInfo\bin\Debug\AirportInfo.exe.config
+C:\Users\otfme\source\repos\AirportInfo\AirportInfo\bin\Debug\AirportInfo.exe
+C:\Users\otfme\source\repos\AirportInfo\AirportInfo\bin\Debug\AirportInfo.pdb
+C:\Users\otfme\source\repos\AirportInfo\AirportInfo\obj\Debug\AirportInfo.csproj.AssemblyReference.cache
+C:\Users\otfme\source\repos\AirportInfo\AirportInfo\obj\Debug\AirportInfo.csproj.CoreCompileInputs.cache
+C:\Users\otfme\source\repos\AirportInfo\AirportInfo\obj\Debug\AirportInfo.exe
+C:\Users\otfme\source\repos\AirportInfo\AirportInfo\obj\Debug\AirportInfo.pdb
