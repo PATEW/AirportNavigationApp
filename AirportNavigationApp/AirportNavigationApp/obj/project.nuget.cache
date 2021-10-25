@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0HgaFZiAS8dRLdgiXNIGIjli08KCOShdE1Ygs80/s6ZQWodbRMbAe0wEy+QVlVAhqwqf4hXsoSm6aHgdI2kMkg==",
+  "dgSpecHash": "dNjKaCiw9PyNSWyJnV3YwXUEtoBGnCrgtl5/Xvg85soRecAZEaH2yChnXJ3t20wwnLltVC221BtiWCAgfcOXxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
+  "projectFilePath": "C:\\Users\\isitg\\source\\repos\\AirportNavApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\isitg\\.nuget\\packages\\htmlagilitypack\\1.11.37\\htmlagilitypack.1.11.37.nupkg.sha512",
     "C:\\Users\\isitg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\isitg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\isitg\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UfucDPZmIXyale/xI0h3UuTcGR6FMq82MLzqZ8hX9Qu1bg6DhfeHKfApqnhTXXTC3Nx6IJ1vgREWgVVUNB/MnA==",
+  "dgSpecHash": "oVAdjJCee0LguniBJbrNdhtI1gWL52knMlBfOrhER8yn9MpTBHoxZ8/lozLlAUeUtZLURWnHZ1WkOfozAjZubA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\AirportNavigationApp.iOS.csproj",
+  "projectFilePath": "C:\\Users\\isitg\\source\\repos\\AirportNavApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\AirportNavigationApp.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\isitg\\.nuget\\packages\\htmlagilitypack\\1.11.37\\htmlagilitypack.1.11.37.nupkg.sha512",
     "C:\\Users\\isitg\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
