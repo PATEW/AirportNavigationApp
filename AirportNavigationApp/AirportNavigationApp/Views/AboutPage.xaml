@@ -35,8 +35,8 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Join the class Discord: "/>
-                                <Span Text="https://discord.gg/zg8XGtMx" FontAttributes="Bold"/>
+                                <Span Text="Join the class Discord Now David: "/>
+                                <Span Text="Click it" FontAttributes="Bold"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>

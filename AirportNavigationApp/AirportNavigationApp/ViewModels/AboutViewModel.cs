@@ -10,7 +10,7 @@ namespace AirportNavigationApp.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://discord.gg/zg8XGtMx"));
+            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"));
         }
 
         public ICommand OpenWebCommand { get; }

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AirportNavigationApp",
+    "\\AirportNavigationApp\\AirportNavigationApp",
+    "\\AirportNavigationApp\\AirportNavigationApp\\ViewModels",
+    "\\AirportNavigationApp\\AirportNavigationApp\\Views"
   ],
-  "SelectedNode": "\\AirportNavigationApp.sln",
   "PreviewInSolutionExplorer": false
 }
