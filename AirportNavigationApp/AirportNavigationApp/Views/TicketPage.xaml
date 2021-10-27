@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AirportNavigationApp.Views.TicketPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <!--<Label Text="Player 1 Name" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="Medium"/>-->
+            <Entry Placeholder="Enter a name for Player 1"/>
+
+            <Entry Placeholder="Enter a name for Player 2"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" 
+                Text="Start"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

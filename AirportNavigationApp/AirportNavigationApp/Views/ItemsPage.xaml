@@ -5,7 +5,8 @@
              Title="{Binding Title}"
              xmlns:local="clr-namespace:AirportNavigationApp.ViewModels"  
              xmlns:model="clr-namespace:AirportNavigationApp.Models"  
-             x:Name="BrowseItemsPage">
+             x:Name="BrowseItemsPage"
+             BackgroundImage="lax.png">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />

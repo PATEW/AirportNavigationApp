@@ -23,19 +23,19 @@
         <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                    <Image Source="toy_plane.png" VerticalOptions="Center" HeightRequest="200" />
+                    <Image Source="lax.jpg" VerticalOptions="Center" HeightRequest="200" />
                 </ContentView>
             </StackLayout>
         </StackLayout>
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
                 <Label Text="Airport Navigation App" FontSize="Title"/>
-                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." FontSize="16" Padding="0,0,0,0"/>
+                <Label Text="Hello Lorem ipsum dolor sit amet deez, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." FontSize="16" Padding="0,0,0,0"/>
                 <Label FontSize="16" Padding="0,24,0,0">
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Join the class Discord: "/>
+                                <Span Text="Join the class Discord Today please: "/>
                                 <Span Text="https://discord.gg/zg8XGtMx" FontAttributes="Bold"/>
                             </FormattedString.Spans>
                         </FormattedString>
@@ -47,6 +47,6 @@
                         TextColor="White" />
             </StackLayout>
         </ScrollView>
-    </Grid>
+    </Grid> 
 
 </ContentPage>
