@@ -3,8 +3,11 @@
     "",
     "\\AirportNavigationApp",
     "\\AirportNavigationApp\\AirportNavigationApp",
-    "\\AirportNavigationApp\\AirportNavigationApp\\Views"
+    "\\AirportNavigationApp\\AirportNavigationApp.Android",
+    "\\AirportNavigationApp\\AirportNavigationApp.Android\\Resources",
+    "\\AirportNavigationApp\\AirportNavigationApp.Android\\Resources\\mipmap-anydpi-v26",
+    "\\AirportNavigationApp\\AirportNavigationApp\\ViewModels"
   ],
-  "SelectedNode": "\\AirportNavigationApp\\AirportNavigationApp\\Views\\AboutPage.xaml",
+  "SelectedNode": "\\AirportNavigationApp\\AirportNavigationApp.Android\\Resources\\mipmap-anydpi-v26\\icon.xml",
   "PreviewInSolutionExplorer": false
 }

@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace AirportNavigationApp.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TicketPage : ContentPage
     {
         public TicketPage()

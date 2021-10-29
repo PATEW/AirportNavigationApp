@@ -26,7 +26,6 @@ C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNav
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\AirportNavigationApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
-C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
@@ -40,3 +39,5 @@ C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNav
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\AirportNavigationApp.pdb
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\MapPage.xaml.g.cs
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\TicketPage.xaml.g.cs
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\Page1.xaml.g.cs
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\SecurityPage.xaml.g.cs

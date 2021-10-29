@@ -1,4 +1,5 @@
 @string/appbar_scrolling_view_behavior;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\layout\rootlayout.xml
+adaptive-icon;obj\Debug\110\res\drawable\icon.xml
 adaptive-icon;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
 adaptive-icon;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
 alpha;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\anim\enterfromleft.xml
@@ -10,9 +11,12 @@ androidx.appcompat.widget.Toolbar;C:\Users\Garbe\Source\Repos\AirportNavigationA
 androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\layout\rootlayout.xml
 androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\layout\shellcontent.xml
 attr;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\values\attrs.xml
+background;obj\Debug\110\res\drawable\icon.xml
 background;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
 background;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
+bitmap;obj\Debug\110\res\drawable\splashscreen.xml
 cache-path;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\44\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;obj\Debug\110\res\drawable\splashscreen.xml
 color;obj\Debug\110\res\values\colors.xml
 com.google.android.material.appbar.AppBarLayout;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\layout\flyoutcontent.xml
 com.google.android.material.appbar.AppBarLayout;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\layout\rootlayout.xml
@@ -24,10 +28,14 @@ com.google.android.material.tabs.TabLayout;C:\Users\Garbe\Source\Repos\AirportNa
 declare-styleable;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\values\attrs.xml
 external-cache-path;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\44\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\44\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Debug\110\res\drawable\icon.xml
 foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\layout\bottomtablayout.xml
 item;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\values\styles.xml
+item;obj\Debug\110\res\drawable\splashscreen.xml
+item;obj\Debug\110\res\values\styles.xml
+layer-list;obj\Debug\110\res\drawable\splashscreen.xml
 LinearLayout;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\layout\bottomtablayout.xml
 paths;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\44\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\lp\45\jl\res\values\attrs.xml
