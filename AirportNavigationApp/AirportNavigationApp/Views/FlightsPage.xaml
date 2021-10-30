@@ -4,7 +4,7 @@
              x:Class="AirportNavigationApp.Views.FlightsPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Command="{Binding WebScraperCommand}" />
+        <ToolbarItem Text="Update Flights" Command="{Binding WebScraperCommand}" />
     </ContentPage.ToolbarItems>
 
 
