@@ -32,7 +32,7 @@
     <TabBar>
         <ShellContent Title="Ticket" ContentTemplate="{DataTemplate local:TicketPage}" />
         <ShellContent Title="Map" Route="MapPage" ContentTemplate="{DataTemplate local:MapPage}" />
-        <ShellContent Title="Parking" ContentTemplate="{DataTemplate local:TicketPage}" />
+        <ShellContent Title="Flights" ContentTemplate="{DataTemplate local:FlightsPage}" />
         <ShellContent Title="Security" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </TabBar>
 
