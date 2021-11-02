@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AirportNavigationApp.Views.TicketPage">
+             x:Class="AirportNavigationApp.Views.TicketPage"
+             BackgroundColor="#595959">
 
     <Shell.TitleView>
         <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text="         Ticket Information" FontSize="30" TextColor="#FFFFFF"/>
@@ -9,7 +10,7 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color x:Key="Accent">#0FB9E1</Color>
+            <Color x:Key="Accent">#00A9CD</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -20,40 +21,43 @@
         </Grid.RowDefinitions>
 
         <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+            <StackLayout Orientation="Vertical" Padding="30,0,30,0" Spacing="0">
                 <Grid>
-   
-                    <Entry x:Name="entry" Text="Please Enter Flight #" />
+
+                    <Entry x:Name="entry"  PlaceholderColor="white" TextColor="#FFFFFF" Text="Please Enter Flight #" />
                     
                     <Button Grid.Column="1"
                             Margin="0,10,0,0" Text="Enter"
                             Clicked="OnEnterClicked"
-                            BackgroundColor="#0FB9E1"
+                            BackgroundColor="#00A9CD"
                             TextColor="White"
                             WidthRequest="80" 
                             HorizontalOptions="Center"/>
                     
-                    <Label Grid.Row="1" Text="Destination: " FontSize="20"/>
-                    
-                    <Label Grid.Row="2" Text="Airline: " FontSize="20"/>
-                    
-                    <Label Grid.Row="3" Text="Terminal: " FontSize="20"/>
-                    
-                    <Label Grid.Row="4" Text="Gate: " FontSize="20"/>
-                    
-                    <Label Grid.Row="5" Text="Departure Time: " FontSize="20"/>
+                    <Label Grid.Row="1" TextColor="#FFFFFF" Text="Destination: " FontSize="20"/>
 
-                    <Label Text="{Binding Destination}"  Grid.Row="1" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" TextColor="#FFFFFF" Text="Airline: " FontSize="20"/>
 
-                    <Label Text="{Binding Airline}"      Grid.Row="2" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+                    <Label Grid.Row="3" TextColor="#FFFFFF" Text="Terminal: " FontSize="20"/>
 
-                    <Label Text="{Binding Terminal}"     Grid.Row="3" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+                    <Label Grid.Row="4" TextColor="#FFFFFF" Text="Gate: " FontSize="20"/>
 
-                    <Label Text="{Binding Gate}"         Grid.Row="4" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+                    <Label Grid.Row="5" TextColor="#FFFFFF" Text="Departure Time: " FontSize="20"/>
 
-                    <Label Text="{Binding DepartureTime}" Grid.Row="5" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+                    <Label TextColor="#FFFFFF" Text="{Binding Destination}"  Grid.Row="1" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+
+                    <Label TextColor="#FFFFFF" Text="{Binding Airline}"      Grid.Row="2" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+
+                    <Label TextColor="#FFFFFF" Text="{Binding Terminal}"     Grid.Row="3" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+
+                    <Label TextColor="#FFFFFF" Text="{Binding Gate}"         Grid.Row="4" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+
+                    <Label TextColor="#FFFFFF" Text="{Binding DepartureTime}" Grid.Row="5" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
 
                 </Grid>
+
+                <Image Source="airport_art.png"/>
+
             </StackLayout>
         </ScrollView>
     </Grid> 

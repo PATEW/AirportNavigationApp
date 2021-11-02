@@ -14,6 +14,8 @@ namespace AirportNavigationApp.Droid
         {
             base.OnCreate(savedInstanceState);
 
+            Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#00A9CD"));
+
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

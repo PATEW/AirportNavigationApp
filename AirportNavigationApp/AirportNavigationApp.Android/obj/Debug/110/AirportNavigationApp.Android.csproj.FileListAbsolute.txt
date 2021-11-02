@@ -1756,4 +1756,7 @@ C:\Users\isitg\source\repos\KyleApp2\AirportNavigationApp\AirportNavigationApp.A
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\android\assets\HtmlAgilityPack.dll
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\android\assets\HtmlAgilityPack.pdb
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\trp_splash.png
-C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\AirportNavigationApp.Android.csproj.CopyComplete
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\icon_map.png
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\icon_flights.png
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\icon_checklist.png
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\airport_art.png
