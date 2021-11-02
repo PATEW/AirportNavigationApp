@@ -6,8 +6,10 @@
     "\\AirportNavigationApp\\AirportNavigationApp.Android",
     "\\AirportNavigationApp\\AirportNavigationApp.Android\\Resources",
     "\\AirportNavigationApp\\AirportNavigationApp.Android\\Resources\\mipmap-anydpi-v26",
-    "\\AirportNavigationApp\\AirportNavigationApp\\ViewModels"
+    "\\AirportNavigationApp\\AirportNavigationApp.Android\\Resources\\mipmap-hdpi",
+    "\\AirportNavigationApp\\AirportNavigationApp\\ViewModels",
+    "\\AirportNavigationApp\\AirportNavigationApp\\Views"
   ],
-  "SelectedNode": "\\AirportNavigationApp\\AirportNavigationApp.Android\\Resources\\mipmap-anydpi-v26\\icon.xml",
+  "SelectedNode": "\\AirportNavigationApp\\AirportNavigationApp\\Views\\TicketPage.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

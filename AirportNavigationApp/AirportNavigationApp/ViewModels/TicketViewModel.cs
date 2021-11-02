@@ -9,7 +9,7 @@ namespace AirportNavigationApp.ViewModels
     {
         public TicketViewModel()
         {
-            Title = "About";
+            Title = "Ticket Information";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://discord.gg/zg8XGtMx"));
         }
 

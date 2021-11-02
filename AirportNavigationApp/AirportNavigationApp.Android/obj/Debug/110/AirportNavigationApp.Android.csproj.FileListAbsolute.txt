@@ -1753,3 +1753,7 @@ C:\Users\isitg\source\repos\KyleApp2\AirportNavigationApp\AirportNavigationApp.A
 C:\Users\isitg\source\repos\KyleApp2\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\isitg\source\repos\KyleApp2\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\android\assets\HtmlAgilityPack.dll
 C:\Users\isitg\source\repos\KyleApp2\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\android\assets\HtmlAgilityPack.pdb
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\android\assets\HtmlAgilityPack.dll
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\android\assets\HtmlAgilityPack.pdb
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\trp_splash.png
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\AirportNavigationApp.Android.csproj.CopyComplete

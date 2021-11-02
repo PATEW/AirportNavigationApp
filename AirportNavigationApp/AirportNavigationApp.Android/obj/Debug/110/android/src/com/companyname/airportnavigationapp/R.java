@@ -6534,7 +6534,8 @@ public final class R {
     public static final int tooltip_frame_dark=0x7f070096;
     public static final int tooltip_frame_light=0x7f070097;
     public static final int toy_plane=0x7f070098;
-    public static final int xamarin_logo=0x7f070099;
+    public static final int trp_splash=0x7f070099;
+    public static final int xamarin_logo=0x7f07009a;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
