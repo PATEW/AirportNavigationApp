@@ -140,9 +140,9 @@ namespace AirportNavigationApp.Views
 
                 // The amount of rows to be created based on how many airline entries were scraped
                 int AmountofLines = listAirline.Count;
-                int AmountofColumns = 6; //hard coded amount of columns based on how much information we wish to display
+                int AmountofColumns = 7; //hard coded amount of columns based on how much information we wish to display
 
-                for (int i=0; i< AmountofColumns+1; i++)
+                for (int i=0; i< AmountofColumns; i++)
                 {
                     productGrid.ColumnDefinitions.Add(new ColumnDefinition());
                 }
@@ -150,53 +150,131 @@ namespace AirportNavigationApp.Views
 
                 for (int rowIndex = 0; rowIndex < AmountofLines; rowIndex++)
                 {
-                    var labelAirline = new Label
+                    try
                     {
-                        Text = listAirline[0],
-                        VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Center
-                    };
-                    productGrid.Children.Add(labelAirline, 0, rowIndex);
-
-                    var labelFlightNum = new Label
+                        var labelAirline = new Label
+                        {
+                            Text = listAirline[rowIndex],
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelAirline, 0, rowIndex);
+                    }
+                    catch
                     {
-                        Text = listFlightNum[0],
-                        VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Center
-                    };
-                    productGrid.Children.Add(labelFlightNum, 1, rowIndex);
-
-                    var labelDestination = new Label
+                        var labelAirline = new Label
+                        {
+                            Text = " ",
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelAirline, 0, rowIndex);
+                    }
+                    
+                    try
                     {
-                        Text = listDestination[0],
-                        VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Center
-                    };
-                    productGrid.Children.Add(labelDestination, 2, rowIndex);
-
-                    var labelStatus = new Label
+                        var labelFlightNum = new Label
+                        {
+                            Text = listFlightNum[rowIndex],
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelFlightNum, 1, rowIndex);
+                    }
+                    catch
                     {
-                        Text = listStatus[0],
-                        VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Center
-                    };
-                    productGrid.Children.Add(labelStatus, 3, rowIndex);
-
-                    var labelUptT = new Label
+                        var labelFlightNum = new Label
+                        {
+                            Text = " ",
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelFlightNum, 1, rowIndex);
+                    }
+                    
+                    try
                     {
-                        Text = listUptT[0],
-                        VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Center
-                    };
-                    productGrid.Children.Add(labelUptT, 4, rowIndex);
-
-                    var labelGate = new Label
+                        var labelDestination = new Label
+                        {
+                            Text = listDestination[rowIndex],
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelDestination, 2, rowIndex);
+                    }
+                    catch
                     {
-                        Text = listGate[0],
-                        VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Center
-                    };
-                    productGrid.Children.Add(labelGate, 5, rowIndex);
+                        var labelDestination = new Label
+                        {
+                            Text = " ",
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelDestination, 2, rowIndex);
+                    }
+                    
+                    try
+                    {
+                        var labelStatus = new Label
+                        {
+                            Text = listStatus[rowIndex],
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelStatus, 3, rowIndex);
+                    }
+                    catch
+                    {
+                        var labelStatus = new Label
+                        {
+                            Text = " ",
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelStatus, 3, rowIndex);
+                    }
+                    
+                    try
+                    {
+                        var labelUptT = new Label
+                        {
+                            Text = listUptT[rowIndex],
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelUptT, 4, rowIndex);
+                    }
+                    catch
+                    {
+                        var labelUptT = new Label
+                        {
+                            Text = " ",
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelUptT, 4, rowIndex);
+                    }
+                    
+                    try
+                    {
+                        var labelGate = new Label
+                        {
+                            Text = listGate[rowIndex],
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelGate, 5, rowIndex);
+                    }
+                    catch
+                    {
+                        var labelGate = new Label
+                        {
+                            Text = " ",
+                            VerticalOptions = LayoutOptions.Center,
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+                        productGrid.Children.Add(labelGate, 5, rowIndex);
+                    }
                 } 
 
 
