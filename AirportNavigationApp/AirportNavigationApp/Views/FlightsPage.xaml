@@ -4,71 +4,14 @@
              x:Class="AirportNavigationApp.Views.FlightsPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Update Flights" Command="{Binding WebScraperCommand}" />
+        <ToolbarItem Text="Update Flights" Clicked="OnUpdateClicked" />
     </ContentPage.ToolbarItems>
 
 
     <ContentPage.Content>
         <StackLayout>
             <ScrollView>
-                <StackLayout>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="80" />
-                            <RowDefinition Height="80"/>
-                            <RowDefinition Height="80" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition />    <!--    Airline    -->
-                            <ColumnDefinition />    <!--    Flight Number    -->
-                            <ColumnDefinition />    <!--    From    -->
-                            <ColumnDefinition />    <!--    Status    -->
-                            <ColumnDefinition />    <!--    Updated Time    -->
-                        </Grid.ColumnDefinitions>
-                        <!--    Airline    -->
-                        <BoxView Grid.Column="0" Grid.Row="0" Color="Gray" />    <!--    0,0    -->
-                        <Label Grid.Column="0" Grid.Row="0"
-                            Text="Row 0, Column 0"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center" />
-
-                        <BoxView Grid.Column="0" Grid.Row="1" Color="Teal" />   <!--    0,1    -->
-                        <Label Grid.Column="0" Grid.Row="1"
-                            Text="Row 1, Column 0"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center" />
-                        
-                        <BoxView Grid.Column="0" Grid.Row="2" Color="DarkOliveGreen" />  <!--    0,2    -->
-                        <Label Grid.Column="0" Grid.Row="2"
-                            Text="Row 1, Column 0"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center" />
-                        <!--    Flight Number    -->
-                        <BoxView Grid.Column="1" Grid.Row="0" Color="Blue" /> <!--    1,0    -->
-                        <Label Grid.Column="1" Grid.Row="0"
-                           Text="Row 0, Column 1"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center" />
-                        <!--    From    -->
-                        <BoxView Grid.Column="2" Grid.Row="0" Color="Fuchsia" /> <!--    2,0    -->
-                        <Label Grid.Column="2" Grid.Row="0"
-                            Text="Row 0, Column 2"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center" />
-                        <!--    Status    -->
-                        <BoxView Grid.Column="3" Grid.Row="0" Color="IndianRed" /> <!--    3,0    -->
-                        <Label Grid.Column="3" Grid.Row="0"
-                            Text="Row 0, Column 3"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center" />
-                        <!--    Updated Time    -->
-                        <BoxView Grid.Column="4" Grid.Row="0" Color="IndianRed" /> <!--    4,0    -->
-                        <Label Grid.Column="4" Grid.Row="0"
-                            Text="Row 0, Column 4"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center" />
-                    </Grid>
-                </StackLayout>
+                <Grid x:Name="productGrid" />
             </ScrollView>
         </StackLayout>
     </ContentPage.Content>
