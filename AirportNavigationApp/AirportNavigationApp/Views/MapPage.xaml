@@ -4,9 +4,6 @@
              x:Class="AirportNavigationApp.Views.MapPage">
     <ContentPage.Content>
         <Image Source="lax.png">
-            <Image.GestureRecognizers>
-                <PinchGestureRecognizer PinchUpdated="OnPinchUpdated" />
-            </Image.GestureRecognizers>
         </Image>
     </ContentPage.Content>
 </ContentPage>

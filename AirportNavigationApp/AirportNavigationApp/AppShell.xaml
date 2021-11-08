@@ -29,20 +29,13 @@
         </ResourceDictionary>
     </Shell.Resources>
 
+    <!-- Navigation bar displayed at the bottom of the app. -->
     <TabBar>
         <ShellContent Title="Ticket"   Icon ="icon_ticket.png" ContentTemplate="{DataTemplate local:TicketPage}" />
         <ShellContent Title="Map"      Icon ="icon_map.png" Route="MapPage" ContentTemplate="{DataTemplate local:MapPage}" />
         <ShellContent Title="Flights"  Icon ="icon_flights.png" ContentTemplate="{DataTemplate local:FlightsPage}" />
-        <ShellContent Title="Checklist" Icon="icon_checklist.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Checklist" Icon="icon_checklist.png" ContentTemplate="{DataTemplate local:CheckListPage}" />
+        <ShellContent Title="Settings" Icon="icon_settings.png" ContentTemplate="{DataTemplate local:SettingsPage}" />
     </TabBar>
-
-    <!--
-        If you would like to navigate to this content you can do so by calling
-        await Shell.Current.GoToAsync("//LoginPage");
-    -->
-    <TabBar>
-        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-    </TabBar>
-
 
 </Shell>

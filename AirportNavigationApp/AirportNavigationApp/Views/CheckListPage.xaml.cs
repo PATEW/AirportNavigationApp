@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AirportNavigationApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class View1 : ContentView
+    public partial class CheckListPage : ContentPage
     {
-        public View1()
+        public CheckListPage()
         {
             InitializeComponent();
         }

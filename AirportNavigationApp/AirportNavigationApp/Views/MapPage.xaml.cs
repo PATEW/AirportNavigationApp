@@ -17,10 +17,6 @@ namespace AirportNavigationApp.Views
             InitializeComponent();
         }
 
-        void OnPinchUpdated(object sender, PinchGestureUpdatedEventArgs e)
-        {
-        
 
-        }
     }
 }

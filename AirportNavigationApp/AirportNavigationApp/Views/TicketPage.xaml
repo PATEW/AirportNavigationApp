@@ -23,7 +23,7 @@
         <StackLayout Orientation="Vertical" Padding="30,0,30,0" Spacing="0">
             <Grid>
 
-                <Entry x:Name="entry"  PlaceholderColor="white" TextColor="#FFFFFF" Text="Please Enter Flight #" />
+                <Entry x:Name="entry"  PlaceholderColor="white" TextColor="#FFFFFF" Placeholder="Please Enter Flight #" />
 
                 <Button Grid.Column="1"
                             Margin="0,10,0,0" Text="Enter"

@@ -62,11 +62,17 @@ namespace AirportNavigationApp.Views
         async void OnEnterClicked(object sender, EventArgs args)
         {
             flightNum = entry.Text;
-            Destination = "Tampa";
-            Airline = "SouthWest";
-            Terminal = "A";
-            Gate = "12";
-            DepartureTime = flightNum;
+            FlightsPage flightPage = new FlightsPage();
+            flightPage.updateFlightInfo();
+            for(int i = 0; i < flightPage.listFlightNum.Count; i++) {
+                if (flightPage.listFlightNum[i].Equals(flightNum)) {
+                    Destination = flightPage.listDestination[i];
+                    Airline = flightPage.listAirline[i];
+                    Gate = flightPage.listGate[i];
+                    DepartureTime = flightPage.listSchedT[i];
+                    break;
+                }
+            }
 
         }
 

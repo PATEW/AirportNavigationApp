@@ -18,24 +18,34 @@ namespace AirportNavigationApp.Views
 
     public partial class FlightsPage : ContentPage
     {
+        public List<string> listAirline;
+        public List<string> listFlightNum;
+        public List<string> listDestination;
+        public List<string> listStatus;
+        public List<string> listSchedT;
+        public List<string> listUptT;
+        public List<string> listGate;
 
-        void OnUpdateClicked(object sender, EventArgs args)
+        void OnUpdateClicked(object sender, EventArgs args) {
+            updateFlightInfo();
+        }
+        public void updateFlightInfo()
         {
+
+            listAirline = new List<string>();
+            listFlightNum = new List<string>();
+            listDestination = new List<string>();
+            listStatus = new List<string>();
+            listSchedT = new List<string>();
+            listUptT = new List<string>();
+            listGate = new List<string>();
+
             try  // Keep the app from crashing incase there are ever problems reaching the website
             {
                 //HTML agility pack from projectNUget package
                 HtmlAgilityPack.HtmlWeb web = new HtmlAgilityPack.HtmlWeb();
                 HtmlAgilityPack.HtmlDocument doc = web.Load("https://tracker.flightview.com/FVAccess2/tools/fids/fidsDefault.asp?accCustId=FVWebFids&fidsId=20001&fidsInit=departures&fidsApt=DAB&fidsFilterAl=&fidsFilterDepap=");
                 string output; //empty string to hold raw output from web
-
-                // Create lists
-                var listAirline = new List<string>();
-                var listFlightNum = new List<string>();
-                var listDestination = new List<string>();
-                var listStatus = new List<string>();
-                var listSchedT = new List<string>();
-                var listUptT = new List<string>();
-                var listGate = new List<string>();
 
                 //Airline
                 foreach (var item in doc.DocumentNode.SelectNodes("//td[@class='ffAlLbl']"))
@@ -131,7 +141,8 @@ namespace AirportNavigationApp.Views
                     int pFrom = output.IndexOf(">") + ">".Length;
                     int pTo = output.LastIndexOf("<");
                     String result = output.Substring(pFrom, pTo - pFrom);   //Substring takes in (first index, last index)
-                    Console.WriteLine(result);                             // Now printing only the Gate
+                    Console.WriteLine(result);      // Now printing only the Gate
+                    listGate.Add(result);
                 }
 
 

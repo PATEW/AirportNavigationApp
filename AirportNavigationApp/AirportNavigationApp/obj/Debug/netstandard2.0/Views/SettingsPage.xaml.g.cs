@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AirportNavigationApp.Views.View1.xaml", "Views/View1.xaml", typeof(global::AirportNavigationApp.Views.View1))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AirportNavigationApp.Views.SettingsPage.xaml", "Views/SettingsPage.xaml", typeof(global::AirportNavigationApp.Views.SettingsPage))]
 
 namespace AirportNavigationApp.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\View1.xaml")]
-    public partial class View1 : global::Xamarin.Forms.ContentView {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\SettingsPage.xaml")]
+    public partial class SettingsPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(View1));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SettingsPage));
         }
     }
 }

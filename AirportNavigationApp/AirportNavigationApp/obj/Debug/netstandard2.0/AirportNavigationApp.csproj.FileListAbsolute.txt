@@ -64,9 +64,10 @@ C:\Users\isitg\source\repos\KyleApp2\AirportNavigationApp\AirportNavigationApp\o
 C:\Users\isitg\source\repos\KyleApp2\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\FlightsPage.xaml.g.cs
 C:\Users\isitg\source\repos\KyleApp2\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\View1.xaml.g.cs
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\FlightsPage.xaml.g.cs
-C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\View1.xaml.g.cs
 C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\FlightsPage.xaml.g.cs
 C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\MapPage.xaml.g.cs
 C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\SecurityPage.xaml.g.cs
 C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\TicketPage.xaml.g.cs
 C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\View1.xaml.g.cs
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\CheckListPage.xaml.g.cs
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs
