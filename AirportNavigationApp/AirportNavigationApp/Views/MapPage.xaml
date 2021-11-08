@@ -1,9 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pinch="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage"
              x:Class="AirportNavigationApp.Views.MapPage">
     <ContentPage.Content>
-        <Image Source="lax.png">
-        </Image>
+
+        <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both" BackgroundColor="White" >
+            <pinch:PinchZoom>
+                <pinch:PinchZoom.Content>
+                    <Image Source="lax.png" />
+                </pinch:PinchZoom.Content>
+            </pinch:PinchZoom>
+        </ScrollView>
+
     </ContentPage.Content>
+
+
 </ContentPage>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "e5Np09O4EZJ1dKnzK0fKVrhIhvcGwmLayxSGdolTRy6x2PQpDnYLoEcjMsP+V8AY5apizJzdiOftCWEPIxEbZA==",
+  "dgSpecHash": "kklsRtuy+tfZHRBwpJU2Z6HWSMN3sH/NipXqQPRTObHzfOpTOpFh7tncUDD1epgN4B8cvjPblkxnyfFSvSFWdA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Garbe\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
   "expectedPackageFiles": [
@@ -8,8 +8,9 @@
     "C:\\Users\\Garbe\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Garbe\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Garbe\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Users\\Garbe\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Garbe\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\Garbe\\.nuget\\packages\\xamarin.forms.pinchzoomimage\\1.2.0\\xamarin.forms.pinchzoomimage.1.2.0.nupkg.sha512"
   ],
   "logs": []
 }

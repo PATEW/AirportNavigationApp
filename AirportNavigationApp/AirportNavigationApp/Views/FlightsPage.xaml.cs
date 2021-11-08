@@ -44,7 +44,7 @@ namespace AirportNavigationApp.Views
             {
                 //HTML agility pack from projectNUget package
                 HtmlAgilityPack.HtmlWeb web = new HtmlAgilityPack.HtmlWeb();
-                HtmlAgilityPack.HtmlDocument doc = web.Load("https://tracker.flightview.com/FVAccess2/tools/fids/fidsDefault.asp?accCustId=FVWebFids&fidsId=20001&fidsInit=departures&fidsApt=DAB&fidsFilterAl=&fidsFilterDepap=");
+                HtmlAgilityPack.HtmlDocument doc = web.Load("https://tracker.flightview.com/FVAccess2/tools/fids/fidsDefault.asp?accCustId=FVWebFids&fidsId=20001&fidsInit=departures&fidsApt=PHX&fidsFilterAl=&fidsFilterDepap=");
                 string output; //empty string to hold raw output from web
 
                 //Airline
