@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:pinch="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage"
-             x:Class="AirportNavigationApp.Views.MapPage">
-    <ContentPage.Content>
+             x:Class="AirportNavigationApp.Views.MapPage"
+             BackgroundColor="#595959">
 
-        <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both" BackgroundColor="White" >
+    <Shell.TitleView>
+        <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text="          Map Information" FontSize="30" TextColor="#FFFFFF"/>
+    </Shell.TitleView>
+    <StackLayout>
 
-            <Picker Title="Pick An Airport">
-                <Picker.Items>
-                </Picker.Items>
-            </Picker>
-          
-            <pinch:PinchZoom>
-                <pinch:PinchZoom.Content>
-                    <Image Source="lax.png" />
-                </pinch:PinchZoom.Content>
-            </pinch:PinchZoom>
+        <Label Text="{Binding ViewMessage}" TextColor="White" FontSize ="16" HorizontalTextAlignment="Center"/>
+        <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both">
+
+            <AbsoluteLayout>
+                <Image Source="DAB.png"/>
+                <ImageButton Source="icon_about.png"
+                             AbsoluteLayout.LayoutFlags="PositionProportional"  
+                             AbsoluteLayout.LayoutBounds="0.88,0.35,50,50"
+                             BackgroundColor="Transparent"  />
+            </AbsoluteLayout>
+
         </ScrollView>
-
-    </ContentPage.Content>
-
-
+    </StackLayout>
 </ContentPage>

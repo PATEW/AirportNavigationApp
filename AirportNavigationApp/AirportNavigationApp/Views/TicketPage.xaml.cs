@@ -89,6 +89,18 @@ namespace AirportNavigationApp.Views
             {
                 App._Airport = "PHX";
             }
+            else if (selectedItem.ToString().Equals("Los Angeles International Airport"))
+            {
+                App._Airport = "LAX";
+            }
+            else if (selectedItem.ToString().Equals("Hartsfield-Jackson Atlanta International Airport"))
+            {
+                App._Airport = "ATL";
+            }
+            else if (selectedItem.ToString().Equals("Tampa International Airport"))
+            {
+                App._Airport = "TPA";
+            }
         }
 
         public TicketPage()

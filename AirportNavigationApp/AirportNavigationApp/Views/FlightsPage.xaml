@@ -4,15 +4,14 @@
              x:Class="AirportNavigationApp.Views.FlightsPage"
              BackgroundColor="#595959">
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Update Flights" Clicked="OnUpdateClicked" />
-    </ContentPage.ToolbarItems>
+    <Shell.TitleView>
+        <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text="          Flight Information" FontSize="30" TextColor="#FFFFFF"/>
+    </Shell.TitleView>
 
 
     <ContentPage.Content>
         <StackLayout>
-            <ScrollView>
-                <Grid x:Name="productGrid" />
+            <ScrollView x:Name="flightView">
             </ScrollView>
         </StackLayout>
     </ContentPage.Content>

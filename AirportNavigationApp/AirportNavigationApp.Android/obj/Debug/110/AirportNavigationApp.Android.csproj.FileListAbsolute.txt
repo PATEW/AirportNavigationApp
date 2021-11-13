@@ -1816,3 +1816,4 @@ C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNav
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\android\src\mono\com\google\android\material\navigation\NavigationBarView_OnItemSelectedListenerImplementor.java
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\icon.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\AirportNavigationApp.Android.csproj.CopyComplete
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\dab.png

@@ -27,6 +27,9 @@
                 <Picker.Items>
                     <x:String>Daytona Beach International Airport</x:String>
                     <x:String>Phoenix Sky Harbor International Airport</x:String>
+                    <x:String>Los Angeles International Airport</x:String>
+                    <x:String>Hartsfield-Jackson Atlanta International Airport</x:String>
+                    <x:String>Tampa International Airport</x:String>
                 </Picker.Items>
             </Picker>
 

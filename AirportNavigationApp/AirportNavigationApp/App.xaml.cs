@@ -9,7 +9,7 @@ namespace AirportNavigationApp
     public partial class App : Application
     {
 
-        public static string _Airport { get; set; } = "Hello";
+        public static string _Airport { get; set; } = "Please Select An Airport";
 
         public App()
         {

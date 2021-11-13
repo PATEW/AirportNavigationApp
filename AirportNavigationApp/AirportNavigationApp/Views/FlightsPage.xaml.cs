@@ -25,17 +25,16 @@ namespace AirportNavigationApp.Views
         public List<string> listSchedT;
         public List<string> listUptT;
         public List<string> listGate;
-        public string airportCode = "DAB";
 
-        void OnUpdateClicked(object sender, EventArgs args) {
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
             updateFlightInfo();
             updateGrid();
         }
 
         public void updateFlightInfo()
         {
-
-            airportCode = App._Airport;
             listAirline = new List<string>();
             listFlightNum = new List<string>();
             listDestination = new List<string>();
@@ -48,7 +47,7 @@ namespace AirportNavigationApp.Views
             {
                 //HTML agility pack from projectNUget package
                 HtmlAgilityPack.HtmlWeb web = new HtmlAgilityPack.HtmlWeb();
-                HtmlAgilityPack.HtmlDocument doc = web.Load("https://tracker.flightview.com/FVAccess2/tools/fids/fidsDefault.asp?accCustId=FVWebFids&fidsId=20001&fidsInit=departures&fidsApt=" + airportCode + "&fidsFilterAl=&fidsFilterDepap=");
+                HtmlAgilityPack.HtmlDocument doc = web.Load("https://tracker.flightview.com/FVAccess2/tools/fids/fidsDefault.asp?accCustId=FVWebFids&fidsId=20001&fidsInit=departures&fidsApt=" + App._Airport + "&fidsFilterAl=&fidsFilterDepap=");
                 string output; //empty string to hold raw output from web
 
                 //Airline
@@ -163,7 +162,7 @@ namespace AirportNavigationApp.Views
             // CREATE GRID _______________________________________________________________________
             // The amount of rows to be created based on how many airline entries were scraped
             int AmountofLines = listAirline.Count;
-            productGrid.Children.Clear();
+            Grid productGrid = new Grid();
 
             var gridHeader = new Label
             {
@@ -171,7 +170,7 @@ namespace AirportNavigationApp.Views
                 VerticalOptions = LayoutOptions.Center,
                 HorizontalOptions = LayoutOptions.Center,
                 TextColor = Color.White,
-                FontSize = 16
+                FontSize = 20
             };
             Grid.SetColumnSpan(gridHeader, 6);
             productGrid.Children.Add(gridHeader);
@@ -370,6 +369,8 @@ namespace AirportNavigationApp.Views
                     productGrid.Children.Add(labelGate, 3, rowIndex + 2);
                 }
             }
+
+            flightView.Content = productGrid;
         }
 
         public FlightsPage()
