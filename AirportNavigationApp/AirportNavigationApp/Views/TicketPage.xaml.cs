@@ -10,8 +10,8 @@ namespace AirportNavigationApp.Views
         private string destination;
         private string airline;
         private string terminal;
-        private string gate;
         private string departureTime;
+        private string status;
         private string flightNum;
 
         public string Destination {
@@ -41,12 +41,13 @@ namespace AirportNavigationApp.Views
             }
         }
 
-        public string Gate {
-            get { return gate; }
+        public string Status
+        {
+            get { return status; }
             set
             {
-                gate = value;
-                OnPropertyChanged(nameof(Gate));
+                status = value;
+                OnPropertyChanged(nameof(Status));
             }
         }
 
@@ -68,12 +69,26 @@ namespace AirportNavigationApp.Views
                 if (flightPage.listFlightNum[i].Equals(flightNum)) {
                     Destination = flightPage.listDestination[i];
                     Airline = flightPage.listAirline[i];
-                    Gate = flightPage.listGate[i];
+                    Terminal = flightPage.listGate[i];
+                    Status = flightPage.listStatus[i];
                     DepartureTime = flightPage.listSchedT[i];
                     break;
                 }
             }
 
+        }
+
+        private void OnPickerSelectedIndexChanged(object sender, EventArgs e)
+        {
+            Picker picker = sender as Picker;
+            var selectedItem = picker.SelectedItem; // This is the model selected in the picker
+            if (selectedItem.ToString().Equals("Daytona Beach International Airport")) {
+                App._Airport = "DAB";
+            }
+            else if (selectedItem.ToString().Equals("Phoenix Sky Harbor International Airport"))
+            {
+                App._Airport = "PHX";
+            }
         }
 
         public TicketPage()
@@ -84,8 +99,8 @@ namespace AirportNavigationApp.Views
             Destination = "N/A";
             Airline = "N/A";
             Terminal = "N/A";
-            Gate = "N/A";
             DepartureTime = "N/A";
+            Status = "N/A";
             
         }
     }

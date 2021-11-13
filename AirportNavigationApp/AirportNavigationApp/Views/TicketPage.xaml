@@ -14,18 +14,26 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+    <StackLayout Orientation="Vertical" Padding="30,0,30,0" Spacing="0">
+        <Grid>
 
-        <StackLayout Orientation="Vertical" Padding="30,0,30,0" Spacing="0">
-            <Grid>
+            <Picker x:Name="picker"
+                    Title="Please Select an Airport"
+                    TitleColor="White"
+                    Grid.ColumnSpan="2"
+                    TextColor="White"
+                    SelectedIndexChanged="OnPickerSelectedIndexChanged"
+                    >
+                <Picker.Items>
+                    <x:String>Daytona Beach International Airport</x:String>
+                    <x:String>Phoenix Sky Harbor International Airport</x:String>
+                </Picker.Items>
+            </Picker>
 
-                <Entry x:Name="entry"  PlaceholderColor="white" TextColor="#FFFFFF" Placeholder="Please Enter Flight #" />
+            <Entry x:Name="entry"  Grid.Row ="1" PlaceholderColor="white" TextColor="#FFFFFF" Placeholder="Please Enter Flight #" />
 
-                <Button Grid.Column="1"
+            <Button Grid.Column="1"
+                        Grid.Row="1"
                             Margin="0,10,0,0" Text="Enter"
                             Clicked="OnEnterClicked"
                             BackgroundColor="#00A9CD"
@@ -33,31 +41,30 @@
                             WidthRequest="80" 
                             HorizontalOptions="Center"/>
 
-                <Label Grid.Row="1" TextColor="#FFFFFF" Text="Destination: "    FontSize="20"/>
+            <Label Grid.Row="2" TextColor="#FFFFFF" Text="Destination: "           FontSize="20"/>
 
-                <Label Grid.Row="2" TextColor="#FFFFFF" Text="Airline: "        FontSize="20"/>
+            <Label Grid.Row="3" TextColor="#FFFFFF" Text="Airline: "               FontSize="20"/>
 
-                <Label Grid.Row="3" TextColor="#FFFFFF" Text="Terminal: "       FontSize="20"/>
+            <Label Grid.Row="4" TextColor="#FFFFFF" Text="Terminal - Gate: "       FontSize="20"/>
 
-                <Label Grid.Row="4" TextColor="#FFFFFF" Text="Gate: "           FontSize="20"/>
+            <Label Grid.Row="5" TextColor="#FFFFFF" Text="Departure Time: "        FontSize="20"/>
 
-                <Label Grid.Row="5" TextColor="#FFFFFF" Text="Departure Time: " FontSize="20"/>
+            <Label Grid.Row="6" TextColor="#FFFFFF" Text="Status: "                FontSize="20"/>
 
-                <Label TextColor="#FFFFFF" Text="{Binding Destination}"  Grid.Row="1" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+            <Label TextColor="#FFFFFF" Text="{Binding Destination}"  Grid.Row="2" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
 
-                <Label TextColor="#FFFFFF" Text="{Binding Airline}"      Grid.Row="2" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+            <Label TextColor="#FFFFFF" Text="{Binding Airline}"      Grid.Row="3" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
 
-                <Label TextColor="#FFFFFF" Text="{Binding Terminal}"     Grid.Row="3" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+            <Label TextColor="#FFFFFF" Text="{Binding Terminal}"     Grid.Row="4" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
 
-                <Label TextColor="#FFFFFF" Text="{Binding Gate}"         Grid.Row="4" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+            <Label TextColor="#FFFFFF" Text="{Binding DepartureTime}"         Grid.Row="5" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
 
-                <Label TextColor="#FFFFFF" Text="{Binding DepartureTime}" Grid.Row="5" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
+            <Label TextColor="#FFFFFF" Text="{Binding Status}" Grid.Row="6" Grid.Column ="1" FontSize="20" HorizontalOptions="Center"/>
 
-            </Grid>
+        </Grid>
 
-            <Image Source="airport_art.png" Margin="0,0,0,0" />
+        <Image Source="airport_art.png" Margin="0,0,0,0" />
 
-        </StackLayout>
-    </Grid> 
+    </StackLayout>
 
 </ContentPage>

@@ -9,6 +9,8 @@ namespace AirportNavigationApp
     public partial class App : Application
     {
 
+        public static string _Airport { get; set; } = "Hello";
+
         public App()
         {
             InitializeComponent();

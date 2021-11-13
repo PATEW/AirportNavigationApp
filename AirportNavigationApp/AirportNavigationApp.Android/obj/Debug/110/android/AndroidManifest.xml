@@ -17,7 +17,7 @@
   </queries>
   <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="AirportNavigationApp.Android" android:theme="@style/MainTheme">
     <activity android:name="crc647b88621b694b1cca.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="AirportNavigationApp" android:theme="@style/MainTheme" />
-    <activity android:name="crc647b88621b694b1cca.SplashActivity" android:label="TRP" android:theme="@style/Splash">
+    <activity android:name="crc647b88621b694b1cca.SplashActivity" android:label="Trp" android:theme="@style/Splash">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

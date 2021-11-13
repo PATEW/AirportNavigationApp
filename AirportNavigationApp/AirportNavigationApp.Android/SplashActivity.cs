@@ -8,7 +8,7 @@ using Android.OS;
 namespace AirportNavigationApp.Droid
 {
 
-    [Activity(Label = "TRP", Theme = "@style/Splash", MainLauncher = true)]
+    [Activity(Label = "Trp", Theme = "@style/Splash", MainLauncher = true)]
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
