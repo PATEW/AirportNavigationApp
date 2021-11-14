@@ -26,11 +26,32 @@ namespace AirportNavigationApp.Views
         public List<string> listUptT;
         public List<string> listGate;
 
+        public FlightsPage()
+        {
+            InitializeComponent();
+            BindingContext = this;
+        }
+
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            updateFlightInfo();
-            updateGrid();
+            if (App._Airport.Equals("Please Select An Airport"))
+            {
+                var noAirportLabel = new Label
+                {
+                    Text = "Please select an airport on the ticket page to view flights",
+                    VerticalOptions = LayoutOptions.Center,
+                    HorizontalOptions = LayoutOptions.Center,
+                    TextColor = Color.White,
+                    FontSize = 20
+                };
+                flightView.Content = noAirportLabel;
+            }
+            else
+            {
+                updateFlightInfo();
+                updateGrid();
+            }
         }
 
         public void updateFlightInfo()
@@ -157,7 +178,7 @@ namespace AirportNavigationApp.Views
             }
         }
 
-        public void updateGrid() 
+        public void updateGrid()
         {
             // CREATE GRID _______________________________________________________________________
             // The amount of rows to be created based on how many airline entries were scraped
@@ -371,13 +392,6 @@ namespace AirportNavigationApp.Views
             }
 
             flightView.Content = productGrid;
-        }
-
-        public FlightsPage()
-        {
-            InitializeComponent();
-
-            BindingContext = this;
         }
     }
 }

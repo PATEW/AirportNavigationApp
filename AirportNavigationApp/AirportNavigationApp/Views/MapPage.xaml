@@ -11,13 +11,8 @@
 
         <Label Text="{Binding ViewMessage}" TextColor="White" FontSize ="16" HorizontalTextAlignment="Center"/>
         <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both">
-
-            <AbsoluteLayout>
-                <Image Source="DAB.png"/>
-                <ImageButton Source="icon_about.png"
-                             AbsoluteLayout.LayoutFlags="PositionProportional"  
-                             AbsoluteLayout.LayoutBounds="0.88,0.35,50,50"
-                             BackgroundColor="Transparent"  />
+            
+            <AbsoluteLayout x:Name="MapLayout" >
             </AbsoluteLayout>
 
         </ScrollView>
