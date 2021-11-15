@@ -12,28 +12,27 @@ namespace AirportNavigationApp.Views
     public partial class MapPage : ContentPage
     {
         public string viewMessage = "You are viewing the map for: " + App._Airport;
-        public string airport = App._Airport;
+        public string oldAirport;
 
         public MapPage()
         {
             InitializeComponent();
             BindingContext = this;
-
-
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            ViewMessage = "You are viewing the map for: " + App._Airport;
-
-            if (App._Airport.Equals("DAB")) {
-                showDaytonaMain();
-            }
-            else if (App._Airport.Equals("PHX"))
-            {
-                showDaytonaMain();
-            }
+            viewMessage = "You are viewing the map for: " + App._Airport;
+            if (! App._Airport.Equals(oldAirport))
+                if (App._Airport.Equals("DAB")) {
+                    showDaytonaMain();
+                }
+                else if (App._Airport.Equals("PHX"))
+                {
+                    showDaytonaMain();
+                }
+            oldAirport = App._Airport;
 
         }
 
@@ -77,21 +76,91 @@ namespace AirportNavigationApp.Views
                 BackgroundColor = Color.Transparent,
             };
             terminalButton.Clicked += showDaytonaTerminal;
-            AbsoluteLayout.SetLayoutBounds(terminalButton, new Rectangle(0.5385, 0.7, 65, 65));
+            AbsoluteLayout.SetLayoutBounds(terminalButton, new Rectangle(0.5385, 0.7, 100, 100));
             AbsoluteLayout.SetLayoutFlags(terminalButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var parkingButton = new ImageButton
+            {
+                Source = "pin_escalator.png",
+                BackgroundColor = Color.Transparent,
+            };
+            parkingButton.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(parkingButton, new Rectangle(0.29, 0.08, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(parkingButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var parkingButton1 = new ImageButton
+            {
+                Source = "pin_escalator.png",
+                BackgroundColor = Color.Transparent,
+            };
+            parkingButton1.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(parkingButton1, new Rectangle(0.8, 0.08, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(parkingButton1, AbsoluteLayoutFlags.PositionProportional);
 
             var dogRestroom = new ImageButton
             {
-                Source = "pin_DogRestroom.png",
+                Source = "pin_Escalator.png",
                 BackgroundColor = Color.Transparent,
             };
             dogRestroom.Clicked += showDaytonaTerminal;
-            AbsoluteLayout.SetLayoutBounds(dogRestroom, new Rectangle(0.91, 0.415, 50, 50));
+            AbsoluteLayout.SetLayoutBounds(dogRestroom, new Rectangle(0.93, 0.42, 100, 100));
             AbsoluteLayout.SetLayoutFlags(dogRestroom, AbsoluteLayoutFlags.PositionProportional);
+
+            var mainEnteranceButton = new ImageButton
+            {
+                Source = "pin_escalator.png",
+                BackgroundColor = Color.Transparent,
+            };
+            mainEnteranceButton.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(mainEnteranceButton, new Rectangle(.354, .493, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(mainEnteranceButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var ticketCounterButton = new ImageButton
+            {
+                Source = "pin_escalator.png",
+                BackgroundColor = Color.Transparent,
+            };
+            ticketCounterButton.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(ticketCounterButton, new Rectangle(.39, .6, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(ticketCounterButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var baggageClaimButton = new ImageButton
+            {
+                Source = "pin_escalator.png",
+                BackgroundColor = Color.Transparent,
+            };
+            baggageClaimButton.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(baggageClaimButton, new Rectangle(.78, .75, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(baggageClaimButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var rentalCounterButton = new ImageButton
+            {
+                Source = "pin_escalator.png",
+                BackgroundColor = Color.Transparent,
+            };
+            rentalCounterButton.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(rentalCounterButton, new Rectangle(.72, .53, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(rentalCounterButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var restroomButton = new ImageButton
+            {
+                Source = "pin_restroom.png",
+                BackgroundColor = Color.Transparent,
+            };
+            restroomButton.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(restroomButton, new Rectangle(0.47, 0.73, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(restroomButton, AbsoluteLayoutFlags.PositionProportional);
 
             MapLayout.Children.Add(mainMap);
             MapLayout.Children.Add(terminalButton);
             MapLayout.Children.Add(dogRestroom);
+            MapLayout.Children.Add(parkingButton);
+            MapLayout.Children.Add(parkingButton1);
+            MapLayout.Children.Add(mainEnteranceButton);
+            MapLayout.Children.Add(ticketCounterButton);
+            MapLayout.Children.Add(baggageClaimButton);
+            MapLayout.Children.Add(rentalCounterButton);
+            MapLayout.Children.Add(restroomButton);
         }
 
 
@@ -152,7 +221,7 @@ namespace AirportNavigationApp.Views
                 BackgroundColor = Color.Transparent,
             };
             restroomButton.Clicked += showDaytonaTerminal;
-            AbsoluteLayout.SetLayoutBounds(restroomButton, new Rectangle(0.652, 0.58, 50, 50));
+            AbsoluteLayout.SetLayoutBounds(restroomButton, new Rectangle(0.67, 0.58, 100, 100));
             AbsoluteLayout.SetLayoutFlags(restroomButton, AbsoluteLayoutFlags.PositionProportional);
 
             MapLayout.Children.Add(mainMap);
@@ -167,16 +236,6 @@ namespace AirportNavigationApp.Views
             {
                 viewMessage = value;
                 OnPropertyChanged(nameof(ViewMessage));
-            }
-        }
-
-        public string Airport
-        {
-            get { return airport; }
-            set
-            {
-                airport = value;
-                OnPropertyChanged(nameof(Airport));
             }
         }
     }

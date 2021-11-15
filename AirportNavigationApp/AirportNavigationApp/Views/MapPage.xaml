@@ -13,6 +13,7 @@
         <ScrollView x:Name="MapScroll" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both">
             
             <AbsoluteLayout x:Name="MapLayout" >
+
             </AbsoluteLayout>
 
         </ScrollView>
