@@ -50,7 +50,7 @@ namespace AirportNavigationApp.Views
                 Source = "icon_about.png",
                 BackgroundColor = Color.Transparent,
             };
-            AbsoluteLayout.SetLayoutBounds(mapButton, new Rectangle(0.88, 0.35, 50, 50));
+            AbsoluteLayout.SetLayoutBounds(mapButton, new Rectangle(0.88, 0.35, 100, 100));
             AbsoluteLayout.SetLayoutFlags(mapButton, AbsoluteLayoutFlags.PositionProportional);
 
             MapLayout.Children.Add(mainMap);
@@ -67,30 +67,31 @@ namespace AirportNavigationApp.Views
 
             var mainMap = new Image
             {
-                Source = "DAB.png"
-            };
-
-            var mapButton = new ImageButton
-            {
-                Source = "icon_about.png",
+                Source = "DAB.png",
                 BackgroundColor = Color.Transparent,
             };
-            mapButton.Clicked += OnMapButtonClicked;
-            AbsoluteLayout.SetLayoutBounds(mapButton, new Rectangle(0.88, 0.35, 50, 50));
-            AbsoluteLayout.SetLayoutFlags(mapButton, AbsoluteLayoutFlags.PositionProportional);
 
             var terminalButton = new ImageButton
             {
-                Source = "icon_about.png",
+                Source = "pin_escalator.png",
                 BackgroundColor = Color.Transparent,
             };
-            mapButton.Clicked += showDaytonaTerminal;
-            AbsoluteLayout.SetLayoutBounds(mapButton, new Rectangle(0.52, 0.715, 50, 50));
-            AbsoluteLayout.SetLayoutFlags(mapButton, AbsoluteLayoutFlags.PositionProportional);
+            terminalButton.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(terminalButton, new Rectangle(0.5385, 0.7, 65, 65));
+            AbsoluteLayout.SetLayoutFlags(terminalButton, AbsoluteLayoutFlags.PositionProportional);
 
-            MapLayout.Children.Add(terminalButton);
+            var dogRestroom = new ImageButton
+            {
+                Source = "pin_DogRestroom.png",
+                BackgroundColor = Color.Transparent,
+            };
+            dogRestroom.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(dogRestroom, new Rectangle(0.91, 0.415, 50, 50));
+            AbsoluteLayout.SetLayoutFlags(dogRestroom, AbsoluteLayoutFlags.PositionProportional);
+
             MapLayout.Children.Add(mainMap);
-            MapLayout.Children.Add(mapButton);
+            MapLayout.Children.Add(terminalButton);
+            MapLayout.Children.Add(dogRestroom);
         }
 
 
@@ -133,7 +134,7 @@ namespace AirportNavigationApp.Views
 
             var mainMap = new Image
             {
-                Source = "DAB_gate.png"
+                Source = "DAB_gate.png",
             };
 
             var terminalButton = new ImageButton
@@ -145,8 +146,18 @@ namespace AirportNavigationApp.Views
             AbsoluteLayout.SetLayoutBounds(terminalButton, new Rectangle(0.058, 0.465, 50, 50));
             AbsoluteLayout.SetLayoutFlags(terminalButton, AbsoluteLayoutFlags.PositionProportional);
 
+            var restroomButton = new ImageButton
+            {
+                Source = "pin_restroom.png",
+                BackgroundColor = Color.Transparent,
+            };
+            restroomButton.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(restroomButton, new Rectangle(0.652, 0.58, 50, 50));
+            AbsoluteLayout.SetLayoutFlags(restroomButton, AbsoluteLayoutFlags.PositionProportional);
+
             MapLayout.Children.Add(mainMap);
             MapLayout.Children.Add(terminalButton);
+            MapLayout.Children.Add(restroomButton);
         }
 
         public string ViewMessage

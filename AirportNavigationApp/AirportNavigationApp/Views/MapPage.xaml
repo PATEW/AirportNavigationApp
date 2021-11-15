@@ -10,7 +10,7 @@
     <StackLayout>
 
         <Label Text="{Binding ViewMessage}" TextColor="White" FontSize ="16" HorizontalTextAlignment="Center"/>
-        <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both">
+        <ScrollView x:Name="MapScroll" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both">
             
             <AbsoluteLayout x:Name="MapLayout" >
             </AbsoluteLayout>
