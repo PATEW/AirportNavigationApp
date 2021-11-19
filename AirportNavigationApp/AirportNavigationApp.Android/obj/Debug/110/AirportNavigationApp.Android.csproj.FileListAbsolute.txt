@@ -1840,3 +1840,4 @@ C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNav
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_gate13.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_gate14.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_gate15.png
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\AirportNavigationApp.Android.csproj.CopyComplete

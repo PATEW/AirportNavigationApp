@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pinch="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage"
              x:Class="AirportNavigationApp.Views.MapPage"
              BackgroundColor="#595959">
 
@@ -11,11 +12,12 @@
 
         <Label Text="{Binding ViewMessage}" TextColor="White" FontSize ="16" HorizontalTextAlignment="Center"/>
         <ScrollView x:Name="MapScroll" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both">
-            
-            <AbsoluteLayout x:Name="MapLayout" >
-
-            </AbsoluteLayout>
-
+            <pinch:PinchZoom>
+                <pinch:PinchZoom.Content>
+                    <AbsoluteLayout x:Name="MapLayout">
+                    </AbsoluteLayout>
+                </pinch:PinchZoom.Content>
+            </pinch:PinchZoom>
         </ScrollView>
     </StackLayout>
 </ContentPage>
