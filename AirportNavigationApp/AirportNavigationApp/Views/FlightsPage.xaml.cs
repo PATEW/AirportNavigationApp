@@ -165,6 +165,11 @@ namespace AirportNavigationApp.Views
                     int pFrom = output.IndexOf(">") + ">".Length;
                     int pTo = output.LastIndexOf("<");
                     String result = output.Substring(pFrom, pTo - pFrom);   //Substring takes in (first index, last index)
+                    
+                    // if the website has no gate, it will grab "&nbsp;", we will replace this with "N/A"
+                    String noGate = "N/A";
+                    result = Regex.Replace(result, "&nbsp;", noGate);
+
                     Console.WriteLine(result);      // Now printing only the Gate
                     listGate.Add(result);
                 }
