@@ -12,6 +12,7 @@
     <ContentPage.Content>
         <StackLayout>
             <ScrollView x:Name="flightView">
+                
             </ScrollView>
         </StackLayout>
     </ContentPage.Content>

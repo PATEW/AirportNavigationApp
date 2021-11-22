@@ -113,7 +113,6 @@ namespace AirportNavigationApp.Views
             Terminal = "N/A";
             DepartureTime = "N/A";
             Status = "N/A";
-            
         }
     }
 }

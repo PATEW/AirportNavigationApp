@@ -136,7 +136,7 @@ namespace AirportNavigationApp.Views
 
                             // cut "&#160;" that's in middle of every string (has to do with how they store time in html)
                             string space = " ";
-                            result = Regex.Replace(result, "&#160;", space); //Replace each of the 5 characters above with just a space
+                            result = Regex.Replace(result, "&#160;", space); //Replace all 5 characters above with just a space
 
 
                             Console.WriteLine(result);
