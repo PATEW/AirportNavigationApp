@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "kklsRtuy+tfZHRBwpJU2Z6HWSMN3sH/NipXqQPRTObHzfOpTOpFh7tncUDD1epgN4B8cvjPblkxnyfFSvSFWdA==",
+  "dgSpecHash": "eRO2i324TyPT21mWcfFz/ft2xpN3+jvYTD6rQ6/ljV2z4M/XRotMdLpmRIEBLZ6rKSNFSVhmKK3baYno5MHajg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Garbe\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
+  "projectFilePath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp5\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Garbe\\.nuget\\packages\\htmlagilitypack\\1.11.37\\htmlagilitypack.1.11.37.nupkg.sha512",
-    "C:\\Users\\Garbe\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Garbe\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Garbe\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Garbe\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\Garbe\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
-    "C:\\Users\\Garbe\\.nuget\\packages\\xamarin.forms.pinchzoomimage\\1.2.0\\xamarin.forms.pinchzoomimage.1.2.0.nupkg.sha512"
+    "C:\\Users\\isitg\\.nuget\\packages\\htmlagilitypack\\1.11.37\\htmlagilitypack.1.11.37.nupkg.sha512",
+    "C:\\Users\\isitg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\isitg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\isitg\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\isitg\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\isitg\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\isitg\\.nuget\\packages\\xamarin.forms.pinchzoomimage\\1.2.0\\xamarin.forms.pinchzoomimage.1.2.0.nupkg.sha512"
   ],
   "logs": []
 }
