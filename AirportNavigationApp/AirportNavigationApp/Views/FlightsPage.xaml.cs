@@ -35,23 +35,12 @@ namespace AirportNavigationApp.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            if (App._Airport.Equals("Please Select An Airport"))
-            {
-                var noAirportLabel = new Label
-                {
-                    Text = "Please select an airport on the ticket page to view flights",
-                    VerticalOptions = LayoutOptions.Center,
-                    HorizontalOptions = LayoutOptions.Center,
-                    TextColor = Color.White,
-                    FontSize = 20
-                };
-                flightView.Content = noAirportLabel;
-            }
-            else
+
+            if (!App._Airport.Equals("Please select an airport"))
             {
                 updateFlightInfo();
-                updateGrid();
             }
+            updateGrid();
         }
 
         public void updateFlightInfo()
@@ -255,8 +244,25 @@ namespace AirportNavigationApp.Views
             };
             productGrid.Children.Add(statusHeader, 5, 1);
 
+            BoxView border = new BoxView
+            {
+                HeightRequest = 1,
+                Color = Color.White,
+                VerticalOptions = LayoutOptions.End,
+            };
+            productGrid.Children.Add(border, 0, 1);
+            Grid.SetColumnSpan(border, 6);
+
             for (int rowIndex = 0; rowIndex < AmountofLines; rowIndex++)
             {
+                BoxView border1 = new BoxView
+                {
+                    HeightRequest = 1,
+                    Color = Color.White,
+                    VerticalOptions = LayoutOptions.End,
+                };
+                productGrid.Children.Add(border1, 0, rowIndex + 2);
+
                 try
                 {
                     var labelAirline = new Label
@@ -279,6 +285,13 @@ namespace AirportNavigationApp.Views
                     };
                     productGrid.Children.Add(labelAirline, 2, rowIndex + 2);
                 }
+                BoxView border2 = new BoxView
+                {
+                    HeightRequest = 1,
+                    Color = Color.White,
+                    VerticalOptions = LayoutOptions.End,
+                };
+                productGrid.Children.Add(border2, 1, rowIndex + 2);
 
                 try
                 {
@@ -302,6 +315,13 @@ namespace AirportNavigationApp.Views
                     };
                     productGrid.Children.Add(labelFlightNum, 0, rowIndex + 2);
                 }
+                BoxView border3 = new BoxView
+                {
+                    HeightRequest = 1,
+                    Color = Color.White,
+                    VerticalOptions = LayoutOptions.End,
+                };
+                productGrid.Children.Add(border3, 2, rowIndex + 2);
 
                 try
                 {
@@ -325,6 +345,13 @@ namespace AirportNavigationApp.Views
                     };
                     productGrid.Children.Add(labelDestination, 1, rowIndex + 2);
                 }
+                BoxView border4 = new BoxView
+                {
+                    HeightRequest = 1,
+                    Color = Color.White,
+                    VerticalOptions = LayoutOptions.End,
+                };
+                productGrid.Children.Add(border4, 3, rowIndex + 2);
 
                 try
                 {
@@ -348,6 +375,13 @@ namespace AirportNavigationApp.Views
                     };
                     productGrid.Children.Add(labelStatus, 5, rowIndex + 2);
                 }
+                BoxView border5 = new BoxView
+                {
+                    HeightRequest = 1,
+                    Color = Color.White,
+                    VerticalOptions = LayoutOptions.End,
+                };
+                productGrid.Children.Add(border5, 4, rowIndex + 2);
 
                 try
                 {
@@ -371,6 +405,13 @@ namespace AirportNavigationApp.Views
                     };
                     productGrid.Children.Add(labelUptT, 4, rowIndex + 2);
                 }
+                BoxView border6 = new BoxView
+                {
+                    HeightRequest = 1,
+                    Color = Color.White,
+                    VerticalOptions = LayoutOptions.End,
+                };
+                productGrid.Children.Add(border6, 5, rowIndex + 2);
 
                 try
                 {

@@ -65,8 +65,10 @@ namespace AirportNavigationApp.Views
             flightNum = entry.Text;
             FlightsPage flightPage = new FlightsPage();
             flightPage.updateFlightInfo();
+            bool flightFound = false;
             for(int i = 0; i < flightPage.listFlightNum.Count; i++) {
                 if (flightPage.listFlightNum[i].Equals(flightNum)) {
+                    flightFound = true;
                     Destination = flightPage.listDestination[i];
                     Airline = flightPage.listAirline[i];
                     Terminal = flightPage.listGate[i];
@@ -74,6 +76,9 @@ namespace AirportNavigationApp.Views
                     DepartureTime = flightPage.listSchedT[i];
                     break;
                 }
+            }
+            if (!flightFound) {
+                DisplayAlert("Flight Not Found", "Sorry, we could not locate your flight. Please ensure your flight number is correct and your departure airport is selected.", "OK");
             }
 
         }

@@ -35,6 +35,7 @@
         <ShellContent Title="Checklist" Icon="icon_checklist.png" ContentTemplate="{DataTemplate local:CheckListPage}" />
         <ShellContent Title="Map"      Icon ="icon_map.png" Route="MapPage" ContentTemplate="{DataTemplate local:MapPage}"/>
         <ShellContent Title="Flights"  Icon ="icon_flights.png" ContentTemplate="{DataTemplate local:FlightsPage}" />
+        <ShellContent Title="About"  Icon ="icon_settings.png" ContentTemplate="{DataTemplate local:SettingsPage}" />
     </TabBar>
 
 </Shell>
