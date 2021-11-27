@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pinch="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage"
              x:Class="AirportNavigationApp.Views.SettingsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout>
+                <Label Text="{Binding ViewMessage}" TextColor="White" FontSize ="16" HorizontalTextAlignment="Center"/>
+                <ScrollView x:Name="MapScroll" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both">
+                    <pinch:PinchZoom>
+                        <pinch:PinchZoom.Content>
+                            <AbsoluteLayout>
+                                <Image Source="DAB_terminal.png"/>
+                                <ImageButton Source="pin_Info.png" AbsoluteLayout.LayoutBounds="0.72, 0.0, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" BackgroundColor="Transparent"/>
+                            </AbsoluteLayout>
+                        </pinch:PinchZoom.Content>
+                    </pinch:PinchZoom>
+                </ScrollView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
