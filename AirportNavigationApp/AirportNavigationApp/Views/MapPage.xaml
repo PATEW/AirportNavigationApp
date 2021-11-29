@@ -10,7 +10,7 @@
     </Shell.TitleView>
     <StackLayout>
 
-        <Label Text="{Binding ViewMessage}" TextColor="White" FontSize ="16" HorizontalTextAlignment="Center"/>
+        <Label Text="{Binding ViewMessage}" TextColor="#FFFFFF" FontSize ="16" HorizontalTextAlignment="Center"/>
         <ScrollView x:Name="MapScroll" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both">
             <pinch:PinchZoom>
                 <pinch:PinchZoom.Content>

@@ -11,8 +11,8 @@
                     <pinch:PinchZoom>
                         <pinch:PinchZoom.Content>
                             <AbsoluteLayout>
-                                <Image Source="DAB_terminal.png"/>
-                                <ImageButton Source="pin_Info.png" AbsoluteLayout.LayoutBounds="0.72, 0.0, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" BackgroundColor="Transparent"/>
+                                <Image Source="DAB_gate.png"/>
+                                <ImageButton Source="pin_Info.png" AbsoluteLayout.LayoutBounds="0.5, 0.8, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" BackgroundColor="Transparent"/>
                             </AbsoluteLayout>
                         </pinch:PinchZoom.Content>
                     </pinch:PinchZoom>

@@ -31,7 +31,7 @@ namespace AirportNavigationApp.Views
                 }
                 else if (App._Airport.Equals("PHX"))
                 {
-                    showDaytonaMain();
+                    showPrescottMain();
                 }
             oldAirport = App._Airport;
 
@@ -478,6 +478,109 @@ namespace AirportNavigationApp.Views
         private void familyRestroomAlert(object sender, EventArgs e)
         {
             DisplayAlert("Restrooms", "Men and Women's restrooms are available here. Family restrooms are also provided.", "Done");
+        }
+
+        void showPrescottMain()
+        {
+            MapLayout.Children.Clear();
+
+            var mainMap = new Image
+            {
+                Source = "PHX.png",
+                BackgroundColor = Color.Transparent,
+            };
+
+            var terminalButton = new ImageButton
+            {
+                Source = "pin_4.png",
+                BackgroundColor = Color.Transparent,
+            };
+            terminalButton.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(terminalButton, new Rectangle(0.5385, 0.7, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(terminalButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var parkingButton = new ImageButton
+            {
+                Source = "pin_1.png",
+                BackgroundColor = Color.Transparent,
+            };
+            parkingButton.Clicked += parkingAlert;
+            AbsoluteLayout.SetLayoutBounds(parkingButton, new Rectangle(0.29, 0.08, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(parkingButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var parkingButton1 = new ImageButton
+            {
+                Source = "pin_1.png",
+                BackgroundColor = Color.Transparent,
+            };
+            parkingButton1.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(parkingButton1, new Rectangle(0.8, 0.08, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(parkingButton1, AbsoluteLayoutFlags.PositionProportional);
+
+            var dogRestroom = new ImageButton
+            {
+                Source = "Pin_Service.png",
+                BackgroundColor = Color.Transparent,
+            };
+            dogRestroom.Clicked += serviceAlert;
+            AbsoluteLayout.SetLayoutBounds(dogRestroom, new Rectangle(0.93, 0.42, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(dogRestroom, AbsoluteLayoutFlags.PositionProportional);
+
+            var mainEnteranceButton = new ImageButton
+            {
+                Source = "Pin_2.png",
+                BackgroundColor = Color.Transparent,
+            };
+            mainEnteranceButton.Clicked += arrivedAlert;
+            AbsoluteLayout.SetLayoutBounds(mainEnteranceButton, new Rectangle(.354, .493, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(mainEnteranceButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var ticketCounterButton = new ImageButton
+            {
+                Source = "pin_3.png",
+                BackgroundColor = Color.Transparent,
+            };
+            ticketCounterButton.Clicked += counterAlert;
+            AbsoluteLayout.SetLayoutBounds(ticketCounterButton, new Rectangle(.39, .6, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(ticketCounterButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var baggageClaimButton = new ImageButton
+            {
+                Source = "Pin_Baggege.png",
+                BackgroundColor = Color.Transparent,
+            };
+            baggageClaimButton.Clicked += baggageAlert;
+            AbsoluteLayout.SetLayoutBounds(baggageClaimButton, new Rectangle(.78, .75, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(baggageClaimButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var rentalCounterButton = new ImageButton
+            {
+                Source = "Pin_CarRental.png",
+                BackgroundColor = Color.Transparent,
+            };
+            rentalCounterButton.Clicked += rentalAlert;
+            AbsoluteLayout.SetLayoutBounds(rentalCounterButton, new Rectangle(.72, .53, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(rentalCounterButton, AbsoluteLayoutFlags.PositionProportional);
+
+            var restroomButton = new ImageButton
+            {
+                Source = "pin_restroom.png",
+                BackgroundColor = Color.Transparent,
+            };
+            restroomButton.Clicked += restroomAlert;
+            AbsoluteLayout.SetLayoutBounds(restroomButton, new Rectangle(0.47, 0.73, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(restroomButton, AbsoluteLayoutFlags.PositionProportional);
+
+            MapLayout.Children.Add(mainMap);
+            MapLayout.Children.Add(terminalButton);
+            MapLayout.Children.Add(dogRestroom);
+            MapLayout.Children.Add(parkingButton);
+            MapLayout.Children.Add(parkingButton1);
+            MapLayout.Children.Add(mainEnteranceButton);
+            MapLayout.Children.Add(ticketCounterButton);
+            MapLayout.Children.Add(baggageClaimButton);
+            MapLayout.Children.Add(rentalCounterButton);
+            MapLayout.Children.Add(restroomButton);
         }
 
         public string ViewMessage

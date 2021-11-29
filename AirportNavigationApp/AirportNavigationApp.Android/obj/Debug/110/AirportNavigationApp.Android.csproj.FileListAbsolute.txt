@@ -1840,7 +1840,6 @@ C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNav
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_gate13.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_gate14.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_gate15.png
-C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\AirportNavigationApp.Android.csproj.CopyComplete
 C:\Users\isitg\Source\Repos\AirportNavigationApp5\AirportNavigationApp\AirportNavigationApp.Android\bin\Debug\AirportNavigationApp.Android.dll
 C:\Users\isitg\Source\Repos\AirportNavigationApp5\AirportNavigationApp\AirportNavigationApp.Android\bin\Debug\AirportNavigationApp.Android.pdb
 C:\Users\isitg\Source\Repos\AirportNavigationApp5\AirportNavigationApp\AirportNavigationApp.Android\bin\Debug\com.companyname.airportnavigationapp.apk
@@ -2535,3 +2534,7 @@ C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNav
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_info.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_service.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_shop.png
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\AirportNavigationApp.Android.csproj.CopyComplete
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\phx.png
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\phxterminal3.png
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\phxterminal4.png
