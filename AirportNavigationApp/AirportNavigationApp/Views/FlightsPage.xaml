@@ -11,7 +11,7 @@
 
     <ContentPage.Content>
         <StackLayout >
-            <Grid x:Name="gridHeader" MinimumHeightRequest="200" Padding="0,10,0,0">
+            <Grid x:Name="gridHeader" MinimumHeightRequest="80" Padding="0,10,0,0">
             </Grid>
             
             <ScrollView x:Name="flightView">

@@ -185,6 +185,7 @@ namespace AirportNavigationApp.Views
                 TextColor = Color.White
             };
             gridHeader.Children.Add(flightNumberHeader, 0, 0);
+            Grid.SetRowSpan(flightNumberHeader, 2);
 
             var destinationHeader = new Label
             {
@@ -194,6 +195,7 @@ namespace AirportNavigationApp.Views
                 TextColor = Color.White
             };
             gridHeader.Children.Add(destinationHeader, 1, 0);
+            Grid.SetRowSpan(destinationHeader, 2);
 
             var airlineHeader = new Label
             {
@@ -203,6 +205,7 @@ namespace AirportNavigationApp.Views
                 TextColor = Color.White
             };
             gridHeader.Children.Add(airlineHeader, 2, 0);
+            Grid.SetRowSpan(airlineHeader, 2);
 
             var locationHeader = new Label
             {
@@ -212,6 +215,7 @@ namespace AirportNavigationApp.Views
                 TextColor = Color.White
             };
             gridHeader.Children.Add(locationHeader, 3, 0);
+            Grid.SetRowSpan(locationHeader, 2);
 
             var departureTimeHeader = new Label
             {
@@ -221,6 +225,7 @@ namespace AirportNavigationApp.Views
                 TextColor = Color.White
             };
             gridHeader.Children.Add(departureTimeHeader, 4, 0);
+            Grid.SetRowSpan(departureTimeHeader, 2);
 
             var statusHeader = new Label
             {
@@ -230,6 +235,7 @@ namespace AirportNavigationApp.Views
                 TextColor = Color.White
             };
             gridHeader.Children.Add(statusHeader, 5, 0);
+            Grid.SetRowSpan(statusHeader, 2);
 
             BoxView border = new BoxView
             {
@@ -237,7 +243,7 @@ namespace AirportNavigationApp.Views
                 Color = Color.White,
                 VerticalOptions = LayoutOptions.End,
             };
-            gridHeader.Children.Add(border, 0, 0);
+            gridHeader.Children.Add(border, 0, 1);
             Grid.SetColumnSpan(border, 6);
         }
 
