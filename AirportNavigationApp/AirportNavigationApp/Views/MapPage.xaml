@@ -3,14 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pinch="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage"
              x:Class="AirportNavigationApp.Views.MapPage"
-             BackgroundColor="#595959">
+             BackgroundColor="White">
 
     <Shell.TitleView>
-        <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text="          Map Information" FontSize="30" TextColor="#FFFFFF"/>
+        <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text="{Binding ViewMessage}" FontSize="30" TextColor="#FFFFFF"/>
     </Shell.TitleView>
     <StackLayout>
-
-        <Label Text="{Binding ViewMessage}" TextColor="#FFFFFF" FontSize ="16" HorizontalTextAlignment="Center"/>
         <ScrollView x:Name="MapScroll" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both">
             <pinch:PinchZoom>
                 <pinch:PinchZoom.Content>

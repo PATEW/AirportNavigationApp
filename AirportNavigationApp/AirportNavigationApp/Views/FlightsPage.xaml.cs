@@ -18,6 +18,7 @@ namespace AirportNavigationApp.Views
 
     public partial class FlightsPage : ContentPage
     {
+        public string viewMessage = "Select Airport on Ticket Page";
         public List<string> listAirline;
         public List<string> listFlightNum;
         public List<string> listDestination;
@@ -30,17 +31,19 @@ namespace AirportNavigationApp.Views
         {
             InitializeComponent();
             BindingContext = this;
+            createHeader();
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
 
-            if (!App._Airport.Equals("Please select an airport"))
+            if (!App._Airport.Equals("Please Select An Airport"))
             {
+                ViewMessage = " Flight Information For: " + App._Airport;
                 updateFlightInfo();
+                updateGrid();
             }
-            updateGrid();
         }
 
         public void updateFlightInfo()
@@ -172,24 +175,8 @@ namespace AirportNavigationApp.Views
             }
         }
 
-        public void updateGrid()
+        public void createHeader()
         {
-            // CREATE GRID _______________________________________________________________________
-            // The amount of rows to be created based on how many airline entries were scraped
-            int AmountofLines = listAirline.Count;
-            Grid productGrid = new Grid();
-
-            var gridHeader = new Label
-            {
-                Text = "Flight Information For: " + App._Airport,
-                VerticalOptions = LayoutOptions.Center,
-                HorizontalOptions = LayoutOptions.Center,
-                TextColor = Color.White,
-                FontSize = 20
-            };
-            Grid.SetColumnSpan(gridHeader, 6);
-            productGrid.Children.Add(gridHeader);
-
             var flightNumberHeader = new Label
             {
                 Text = "Flight #",
@@ -197,7 +184,7 @@ namespace AirportNavigationApp.Views
                 HorizontalOptions = LayoutOptions.Center,
                 TextColor = Color.White
             };
-            productGrid.Children.Add(flightNumberHeader, 0, 1);
+            gridHeader.Children.Add(flightNumberHeader, 0, 0);
 
             var destinationHeader = new Label
             {
@@ -206,7 +193,7 @@ namespace AirportNavigationApp.Views
                 HorizontalOptions = LayoutOptions.Center,
                 TextColor = Color.White
             };
-            productGrid.Children.Add(destinationHeader, 1, 1);
+            gridHeader.Children.Add(destinationHeader, 1, 0);
 
             var airlineHeader = new Label
             {
@@ -215,7 +202,7 @@ namespace AirportNavigationApp.Views
                 HorizontalOptions = LayoutOptions.Center,
                 TextColor = Color.White
             };
-            productGrid.Children.Add(airlineHeader, 2, 1);
+            gridHeader.Children.Add(airlineHeader, 2, 0);
 
             var locationHeader = new Label
             {
@@ -224,7 +211,7 @@ namespace AirportNavigationApp.Views
                 HorizontalOptions = LayoutOptions.Center,
                 TextColor = Color.White
             };
-            productGrid.Children.Add(locationHeader, 3, 1);
+            gridHeader.Children.Add(locationHeader, 3, 0);
 
             var departureTimeHeader = new Label
             {
@@ -233,7 +220,7 @@ namespace AirportNavigationApp.Views
                 HorizontalOptions = LayoutOptions.Center,
                 TextColor = Color.White
             };
-            productGrid.Children.Add(departureTimeHeader, 4, 1);
+            gridHeader.Children.Add(departureTimeHeader, 4, 0);
 
             var statusHeader = new Label
             {
@@ -242,7 +229,7 @@ namespace AirportNavigationApp.Views
                 HorizontalOptions = LayoutOptions.Center,
                 TextColor = Color.White
             };
-            productGrid.Children.Add(statusHeader, 5, 1);
+            gridHeader.Children.Add(statusHeader, 5, 0);
 
             BoxView border = new BoxView
             {
@@ -250,8 +237,16 @@ namespace AirportNavigationApp.Views
                 Color = Color.White,
                 VerticalOptions = LayoutOptions.End,
             };
-            productGrid.Children.Add(border, 0, 1);
+            gridHeader.Children.Add(border, 0, 0);
             Grid.SetColumnSpan(border, 6);
+        }
+
+        public void updateGrid()
+        {
+            // CREATE GRID _______________________________________________________________________
+            // The amount of rows to be created based on how many airline entries were scraped
+            int AmountofLines = listAirline.Count;
+            Grid productGrid = new Grid();
 
             for (int rowIndex = 0; rowIndex < AmountofLines; rowIndex++)
             {
@@ -261,7 +256,7 @@ namespace AirportNavigationApp.Views
                     Color = Color.White,
                     VerticalOptions = LayoutOptions.End,
                 };
-                productGrid.Children.Add(border1, 0, rowIndex + 2);
+                productGrid.Children.Add(border1, 0, rowIndex);
 
                 try
                 {
@@ -272,7 +267,7 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelAirline, 2, rowIndex + 2);
+                    productGrid.Children.Add(labelAirline, 2, rowIndex);
                 }
                 catch
                 {
@@ -283,7 +278,7 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelAirline, 2, rowIndex + 2);
+                    productGrid.Children.Add(labelAirline, 2, rowIndex);
                 }
                 BoxView border2 = new BoxView
                 {
@@ -291,7 +286,7 @@ namespace AirportNavigationApp.Views
                     Color = Color.White,
                     VerticalOptions = LayoutOptions.End,
                 };
-                productGrid.Children.Add(border2, 1, rowIndex + 2);
+                productGrid.Children.Add(border2, 1, rowIndex);
 
                 try
                 {
@@ -302,7 +297,7 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelFlightNum, 0, rowIndex + 2);
+                    productGrid.Children.Add(labelFlightNum, 0, rowIndex);
                 }
                 catch
                 {
@@ -313,7 +308,7 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelFlightNum, 0, rowIndex + 2);
+                    productGrid.Children.Add(labelFlightNum, 0, rowIndex);
                 }
                 BoxView border3 = new BoxView
                 {
@@ -321,7 +316,7 @@ namespace AirportNavigationApp.Views
                     Color = Color.White,
                     VerticalOptions = LayoutOptions.End,
                 };
-                productGrid.Children.Add(border3, 2, rowIndex + 2);
+                productGrid.Children.Add(border3, 2, rowIndex);
 
                 try
                 {
@@ -332,7 +327,7 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelDestination, 1, rowIndex + 2);
+                    productGrid.Children.Add(labelDestination, 1, rowIndex);
                 }
                 catch
                 {
@@ -343,7 +338,7 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelDestination, 1, rowIndex + 2);
+                    productGrid.Children.Add(labelDestination, 1, rowIndex);
                 }
                 BoxView border4 = new BoxView
                 {
@@ -351,7 +346,7 @@ namespace AirportNavigationApp.Views
                     Color = Color.White,
                     VerticalOptions = LayoutOptions.End,
                 };
-                productGrid.Children.Add(border4, 3, rowIndex + 2);
+                productGrid.Children.Add(border4, 3, rowIndex);
 
                 try
                 {
@@ -362,7 +357,7 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelStatus, 5, rowIndex + 2);
+                    productGrid.Children.Add(labelStatus, 5, rowIndex);
                 }
                 catch
                 {
@@ -373,7 +368,7 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelStatus, 5, rowIndex + 2);
+                    productGrid.Children.Add(labelStatus, 5, rowIndex);
                 }
                 BoxView border5 = new BoxView
                 {
@@ -381,7 +376,7 @@ namespace AirportNavigationApp.Views
                     Color = Color.White,
                     VerticalOptions = LayoutOptions.End,
                 };
-                productGrid.Children.Add(border5, 4, rowIndex + 2);
+                productGrid.Children.Add(border5, 4, rowIndex);
 
                 try
                 {
@@ -392,7 +387,7 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelUptT, 4, rowIndex + 2);
+                    productGrid.Children.Add(labelUptT, 4, rowIndex);
                 }
                 catch
                 {
@@ -403,7 +398,7 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelUptT, 4, rowIndex + 2);
+                    productGrid.Children.Add(labelUptT, 4, rowIndex);
                 }
                 BoxView border6 = new BoxView
                 {
@@ -411,7 +406,7 @@ namespace AirportNavigationApp.Views
                     Color = Color.White,
                     VerticalOptions = LayoutOptions.End,
                 };
-                productGrid.Children.Add(border6, 5, rowIndex + 2);
+                productGrid.Children.Add(border6, 5, rowIndex);
 
                 try
                 {
@@ -422,7 +417,7 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelGate, 3, rowIndex + 2);
+                    productGrid.Children.Add(labelGate, 3, rowIndex);
                 }
                 catch
                 {
@@ -433,11 +428,21 @@ namespace AirportNavigationApp.Views
                         HorizontalOptions = LayoutOptions.Center,
                         TextColor = Color.White
                     };
-                    productGrid.Children.Add(labelGate, 3, rowIndex + 2);
+                    productGrid.Children.Add(labelGate, 3, rowIndex);
                 }
             }
 
             flightView.Content = productGrid;
+        }
+
+        public string ViewMessage
+        {
+            get { return viewMessage; }
+            set
+            {
+                viewMessage = value;
+                OnPropertyChanged(nameof(ViewMessage));
+            }
         }
     }
 }

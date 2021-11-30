@@ -11,7 +11,7 @@ namespace AirportNavigationApp.Views
 {
     public partial class MapPage : ContentPage
     {
-        public string viewMessage = "You are viewing the map for: " + App._Airport;
+        public string viewMessage = "Select Airport on Ticket Page";
         public string oldAirport;
         public double scaleCurrent = 0.5;
 
@@ -24,17 +24,20 @@ namespace AirportNavigationApp.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            ViewMessage = "You are viewing the map for: " + App._Airport;
-            if (! App._Airport.Equals(oldAirport))
-                if (App._Airport.Equals("DAB")) {
+            if (!App._Airport.Equals(oldAirport))
+            {
+                if (App._Airport.Equals("DAB"))
+                {
+                    ViewMessage = "  Map Information For: " + App._Airport;
                     showDaytonaMain();
                 }
                 else if (App._Airport.Equals("PHX"))
                 {
+                    ViewMessage = "  Map Information For: " + App._Airport;
                     showPrescottMain();
                 }
+            }
             oldAirport = App._Airport;
-
         }
 
         void OnMapButtonClicked(object sender, EventArgs args) {
@@ -127,11 +130,11 @@ namespace AirportNavigationApp.Views
 
             var baggageClaimButton = new ImageButton
             {
-                Source = "Pin_Baggege.png",
+                Source = "Pin_Baggage.png",
                 BackgroundColor = Color.Transparent,
             };
             baggageClaimButton.Clicked += baggageAlert;
-            AbsoluteLayout.SetLayoutBounds(baggageClaimButton, new Rectangle(.78, .75, 100, 100));
+            AbsoluteLayout.SetLayoutBounds(baggageClaimButton, new Rectangle(0.78, 0.75, 100, 100));
             AbsoluteLayout.SetLayoutFlags(baggageClaimButton, AbsoluteLayoutFlags.PositionProportional);
 
             var rentalCounterButton = new ImageButton
@@ -490,14 +493,23 @@ namespace AirportNavigationApp.Views
                 BackgroundColor = Color.Transparent,
             };
 
-            var terminalButton = new ImageButton
+            var terminalButton3 = new ImageButton
             {
                 Source = "pin_4.png",
                 BackgroundColor = Color.Transparent,
             };
-            terminalButton.Clicked += showDaytonaTerminal;
-            AbsoluteLayout.SetLayoutBounds(terminalButton, new Rectangle(0.5385, 0.7, 100, 100));
-            AbsoluteLayout.SetLayoutFlags(terminalButton, AbsoluteLayoutFlags.PositionProportional);
+            terminalButton3.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(terminalButton3, new Rectangle(0.411, 0.48, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(terminalButton3, AbsoluteLayoutFlags.PositionProportional);
+
+            var terminalButton4 = new ImageButton
+            {
+                Source = "pin_4.png",
+                BackgroundColor = Color.Transparent,
+            };
+            terminalButton4.Clicked += showDaytonaTerminal;
+            AbsoluteLayout.SetLayoutBounds(terminalButton4, new Rectangle(0.655, 0.5, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(terminalButton4, AbsoluteLayoutFlags.PositionProportional);
 
             var parkingButton = new ImageButton
             {
@@ -572,7 +584,8 @@ namespace AirportNavigationApp.Views
             AbsoluteLayout.SetLayoutFlags(restroomButton, AbsoluteLayoutFlags.PositionProportional);
 
             MapLayout.Children.Add(mainMap);
-            MapLayout.Children.Add(terminalButton);
+            MapLayout.Children.Add(terminalButton3);
+            MapLayout.Children.Add(terminalButton4);
             MapLayout.Children.Add(dogRestroom);
             MapLayout.Children.Add(parkingButton);
             MapLayout.Children.Add(parkingButton1);
