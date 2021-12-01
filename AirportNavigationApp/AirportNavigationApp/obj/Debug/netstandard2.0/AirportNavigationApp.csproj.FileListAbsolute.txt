@@ -68,7 +68,6 @@ C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNav
 C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\MapPage.xaml.g.cs
 C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\SecurityPage.xaml.g.cs
 C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\TicketPage.xaml.g.cs
-C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\View1.xaml.g.cs
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\CheckListPage.xaml.g.cs
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs
 C:\Users\isitg\Source\Repos\AirportNavigationApp5\AirportNavigationApp\AirportNavigationApp\bin\Debug\netstandard2.0\AirportNavigationApp.deps.json
@@ -96,3 +95,5 @@ C:\Users\isitg\Source\Repos\AirportNavigationApp5\AirportNavigationApp\AirportNa
 C:\Users\isitg\Source\Repos\AirportNavigationApp5\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\AirportNavigationApp.dll
 C:\Users\isitg\Source\Repos\AirportNavigationApp5\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\ref\AirportNavigationApp.dll
 C:\Users\isitg\Source\Repos\AirportNavigationApp5\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\AirportNavigationApp.pdb
+C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\CheckListPage.xaml.g.cs
+C:\Users\isitg\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs
