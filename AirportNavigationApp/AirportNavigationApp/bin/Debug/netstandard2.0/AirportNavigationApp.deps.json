@@ -9,21 +9,21 @@
     ".NETStandard,Version=v2.0/": {
       "AirportNavigationApp/1.0.0": {
         "dependencies": {
-          "HtmlAgilityPack": "1.11.37",
+          "HtmlAgilityPack": "1.11.38",
           "NETStandard.Library": "2.0.3",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms": "5.0.0.2244",
           "Xamarin.Forms.PinchZoomImage": "1.2.0"
         },
         "runtime": {
           "AirportNavigationApp.dll": {}
         }
       },
-      "HtmlAgilityPack/1.11.37": {
+      "HtmlAgilityPack/1.11.38": {
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
-            "assemblyVersion": "1.11.37.0",
-            "fileVersion": "1.11.37.0"
+            "assemblyVersion": "1.11.38.0",
+            "fileVersion": "1.11.38.0"
           }
         }
       },
@@ -52,25 +52,25 @@
           }
         }
       },
-      "Xamarin.Forms/5.0.0.2196": {
+      "Xamarin.Forms/5.0.0.2244": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.786"
+            "fileVersion": "5.0.0.819"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.786"
+            "fileVersion": "5.0.0.819"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.786"
+            "fileVersion": "5.0.0.819"
           }
         }
       },
       "Xamarin.Forms.PinchZoomImage/1.2.0": {
         "dependencies": {
-          "Xamarin.Forms": "5.0.0.2196"
+          "Xamarin.Forms": "5.0.0.2244"
         },
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.PinchZoomImage.dll": {
@@ -87,12 +87,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "HtmlAgilityPack/1.11.37": {
+    "HtmlAgilityPack/1.11.38": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HioktZJuMHVW7QTwVayHDoBL8dPL68vGRLFdQXYNuSJkVfhxn6xihcocUgbR+B1Lm/YesigUvWrdH0JY+PZ+0g==",
-      "path": "htmlagilitypack/1.11.37",
-      "hashPath": "htmlagilitypack.1.11.37.nupkg.sha512"
+      "sha512": "sha512-DC1j3GzU9lBp8hSXb9eYRHiJOUS5sxjBjme/4RTYjTXlgiFCOMXkIY+rmL+BtUss1pCwCN4LaVlZ/ci/fWY+lA==",
+      "path": "htmlagilitypack/1.11.38",
+      "hashPath": "htmlagilitypack.1.11.38.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -122,12 +122,12 @@
       "path": "xamarin.essentials/1.7.0",
       "hashPath": "xamarin.essentials.1.7.0.nupkg.sha512"
     },
-    "Xamarin.Forms/5.0.0.2196": {
+    "Xamarin.Forms/5.0.0.2244": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zSXDiZukojtEBmZKUUG1yYBwlB9tI8JLPkc6n+Sm1PAX01QyzErWE9AaFJgP7usyoGHn92l4HnQF7A+/MPI6VA==",
-      "path": "xamarin.forms/5.0.0.2196",
-      "hashPath": "xamarin.forms.5.0.0.2196.nupkg.sha512"
+      "sha512": "sha512-Ssr+0Pf11oHcaMHM4dHXW1NGex0h9uH7gQxuoLtiZcdPtXBli3SXzY3rF9ovp4Bw2mTe7cYpvy554pIpuW6fvA==",
+      "path": "xamarin.forms/5.0.0.2244",
+      "hashPath": "xamarin.forms.5.0.0.2244.nupkg.sha512"
     },
     "Xamarin.Forms.PinchZoomImage/1.2.0": {
       "type": "package",

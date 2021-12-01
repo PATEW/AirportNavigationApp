@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "HtmlAgilityPack/1.11.37": {
+      "HtmlAgilityPack/1.11.38": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {}
@@ -56,7 +56,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2196": {
+      "Xamarin.Forms/5.0.0.2244": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -88,14 +88,14 @@
     }
   },
   "libraries": {
-    "HtmlAgilityPack/1.11.37": {
-      "sha512": "HioktZJuMHVW7QTwVayHDoBL8dPL68vGRLFdQXYNuSJkVfhxn6xihcocUgbR+B1Lm/YesigUvWrdH0JY+PZ+0g==",
+    "HtmlAgilityPack/1.11.38": {
+      "sha512": "DC1j3GzU9lBp8hSXb9eYRHiJOUS5sxjBjme/4RTYjTXlgiFCOMXkIY+rmL+BtUss1pCwCN4LaVlZ/ci/fWY+lA==",
       "type": "package",
-      "path": "htmlagilitypack/1.11.37",
+      "path": "htmlagilitypack/1.11.38",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "htmlagilitypack.1.11.37.nupkg.sha512",
+        "htmlagilitypack.1.11.38.nupkg.sha512",
         "htmlagilitypack.nuspec",
         "lib/Net35/HtmlAgilityPack.dll",
         "lib/Net35/HtmlAgilityPack.pdb",
@@ -369,10 +369,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.2196": {
-      "sha512": "zSXDiZukojtEBmZKUUG1yYBwlB9tI8JLPkc6n+Sm1PAX01QyzErWE9AaFJgP7usyoGHn92l4HnQF7A+/MPI6VA==",
+    "Xamarin.Forms/5.0.0.2244": {
+      "sha512": "Ssr+0Pf11oHcaMHM4dHXW1NGex0h9uH7gQxuoLtiZcdPtXBli3SXzY3rF9ovp4Bw2mTe7cYpvy554pIpuW6fvA==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.2196",
+      "path": "xamarin.forms/5.0.0.2244",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -581,7 +581,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.2196.nupkg.sha512",
+        "xamarin.forms.5.0.0.2244.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -600,31 +600,31 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "HtmlAgilityPack >= 1.11.37",
+      "HtmlAgilityPack >= 1.11.38",
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Essentials >= 1.7.0",
-      "Xamarin.Forms >= 5.0.0.2196",
+      "Xamarin.Forms >= 5.0.0.2244",
       "Xamarin.Forms.PinchZoomImage >= 1.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Garbe\\.nuget\\packages\\": {},
+    "C:\\Users\\isitg\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Garbe\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
+      "projectUniqueName": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
       "projectName": "AirportNavigationApp",
-      "projectPath": "C:\\Users\\Garbe\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
-      "packagesPath": "C:\\Users\\Garbe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Garbe\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\obj\\",
+      "projectPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj",
+      "packagesPath": "C:\\Users\\isitg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Garbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\isitg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -653,7 +653,7 @@
         "dependencies": {
           "HtmlAgilityPack": {
             "target": "Package",
-            "version": "[1.11.37, )"
+            "version": "[1.11.38, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
@@ -667,7 +667,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[5.0.0.2196, )"
+            "version": "[5.0.0.2244, )"
           },
           "Xamarin.Forms.PinchZoomImage": {
             "target": "Package",

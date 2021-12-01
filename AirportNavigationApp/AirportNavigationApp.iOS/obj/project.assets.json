@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "HtmlAgilityPack/1.11.37": {
+      "HtmlAgilityPack/1.11.38": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {}
@@ -176,9 +176,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "HtmlAgilityPack": "1.11.37",
+          "HtmlAgilityPack": "1.11.38",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms": "5.0.0.2244",
           "Xamarin.Forms.PinchZoomImage": "1.2.0"
         },
         "compile": {
@@ -190,7 +190,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "HtmlAgilityPack/1.11.37": {
+      "HtmlAgilityPack/1.11.38": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {}
@@ -364,9 +364,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "HtmlAgilityPack": "1.11.37",
+          "HtmlAgilityPack": "1.11.38",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms": "5.0.0.2244",
           "Xamarin.Forms.PinchZoomImage": "1.2.0"
         },
         "compile": {
@@ -378,7 +378,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "HtmlAgilityPack/1.11.37": {
+      "HtmlAgilityPack/1.11.38": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {}
@@ -552,9 +552,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "HtmlAgilityPack": "1.11.37",
+          "HtmlAgilityPack": "1.11.38",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms": "5.0.0.2244",
           "Xamarin.Forms.PinchZoomImage": "1.2.0"
         },
         "compile": {
@@ -566,7 +566,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "HtmlAgilityPack/1.11.37": {
+      "HtmlAgilityPack/1.11.38": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {}
@@ -740,9 +740,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "HtmlAgilityPack": "1.11.37",
+          "HtmlAgilityPack": "1.11.38",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms": "5.0.0.2244",
           "Xamarin.Forms.PinchZoomImage": "1.2.0"
         },
         "compile": {
@@ -755,14 +755,14 @@
     }
   },
   "libraries": {
-    "HtmlAgilityPack/1.11.37": {
-      "sha512": "HioktZJuMHVW7QTwVayHDoBL8dPL68vGRLFdQXYNuSJkVfhxn6xihcocUgbR+B1Lm/YesigUvWrdH0JY+PZ+0g==",
+    "HtmlAgilityPack/1.11.38": {
+      "sha512": "DC1j3GzU9lBp8hSXb9eYRHiJOUS5sxjBjme/4RTYjTXlgiFCOMXkIY+rmL+BtUss1pCwCN4LaVlZ/ci/fWY+lA==",
       "type": "package",
-      "path": "htmlagilitypack/1.11.37",
+      "path": "htmlagilitypack/1.11.38",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "htmlagilitypack.1.11.37.nupkg.sha512",
+        "htmlagilitypack.1.11.38.nupkg.sha512",
         "htmlagilitypack.nuspec",
         "lib/Net35/HtmlAgilityPack.dll",
         "lib/Net35/HtmlAgilityPack.pdb",
@@ -1135,24 +1135,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Garbe\\.nuget\\packages\\": {},
+    "C:\\Users\\isitg\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Garbe\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\AirportNavigationApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\AirportNavigationApp.iOS.csproj",
       "projectName": "AirportNavigationApp.iOS",
-      "projectPath": "C:\\Users\\Garbe\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\AirportNavigationApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\Garbe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Garbe\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\AirportNavigationApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\isitg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Garbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\isitg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1166,8 +1166,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Garbe\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj": {
-              "projectPath": "C:\\Users\\Garbe\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj"
+            "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj": {
+              "projectPath": "C:\\Users\\isitg\\Source\\Repos\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp\\AirportNavigationApp.csproj"
             }
           }
         }
@@ -1202,5 +1202,20 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2244 to 5.0.0.2196. Reference the package directly from the project to select a different version. \r\n AirportNavigationApp.iOS -> AirportNavigationApp -> Xamarin.Forms (>= 5.0.0.2244) \r\n AirportNavigationApp.iOS -> Xamarin.Forms (>= 5.0.0.2196)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }
