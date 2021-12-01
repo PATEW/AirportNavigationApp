@@ -44,6 +44,8 @@ namespace AirportNavigationApp.Views
 
             if (!App._Airport.Equals("Please Select An Airport"))
             {
+                maxLines = 30;
+                minLines = 0;
                 ViewMessage = " Flight Information For: " + App._Airport;
                 updateFlightInfo();
                 updateGrid();
@@ -273,7 +275,15 @@ namespace AirportNavigationApp.Views
                 showNext = true;
 
             }
-            
+
+            //fixes bug where list would continue if it didnt end on a perfect 30
+            if (maxLines > listAirline.Count)
+            {
+                AmountofLines = listAirline.Count;
+                showNext = false;
+            }
+
+
             // if the minLines > 0 (meaning you are on a page other than 1) show the Prevbutton
             if (minLines > 0)
             {
@@ -484,8 +494,9 @@ namespace AirportNavigationApp.Views
                     TextColor = Color.White,
 
                 };
-                productGrid.Children.Add(showNextButton, 3, RelativeRowIndex);
+                productGrid.Children.Add(showNextButton, 4, RelativeRowIndex);
                 showNextButton.Clicked += nextButtonAction;
+                Grid.SetColumnSpan(showNextButton, 2);
 
             }
 
@@ -499,8 +510,9 @@ namespace AirportNavigationApp.Views
                     HorizontalOptions = LayoutOptions.Center,
                     TextColor = Color.White,
                 };
-                productGrid.Children.Add(showPrevButton, 2, RelativeRowIndex);
+                productGrid.Children.Add(showPrevButton, 0, RelativeRowIndex);
                 showPrevButton.Clicked += prevButtonAction;
+                Grid.SetColumnSpan(showPrevButton, 2);
 
             }
 
