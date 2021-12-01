@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pinch="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage"
              x:Class="AirportNavigationApp.Views.MapPage"
-             BackgroundColor="White">
+             BackgroundColor="#565656">
 
     <Shell.TitleView>
         <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text="{Binding ViewMessage}" FontSize="30" TextColor="#FFFFFF"/>

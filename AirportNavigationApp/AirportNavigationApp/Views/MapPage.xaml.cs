@@ -29,11 +29,13 @@ namespace AirportNavigationApp.Views
                 if (App._Airport.Equals("DAB"))
                 {
                     ViewMessage = "  Map Information For: " + App._Airport;
+                    BackgroundColor = Color.White;
                     showDaytonaMain();
                 }
                 else if (App._Airport.Equals("PHX"))
                 {
                     ViewMessage = "  Map Information For: " + App._Airport;
+                    BackgroundColor = Color.FromHex("#F0F0F0");
                     showPrescottMain();
                 }
             }
