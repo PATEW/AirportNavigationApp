@@ -67,6 +67,7 @@ namespace AirportNavigationApp.Views
         }
 
         void showDaytonaMain() {
+            MapScroll.ScrollToAsync(0, 0, false);
             MapLayout.Children.Clear();
 
             var mainMap = new Image
@@ -199,6 +200,7 @@ namespace AirportNavigationApp.Views
 
         void showDaytonaTerminal(object sender, EventArgs args)
         {
+            MapScroll.ScrollToAsync(350, 0, false);
             MapLayout.Children.Clear();
 
             var mainMap = new Image
@@ -310,6 +312,7 @@ namespace AirportNavigationApp.Views
 
         void showDaytonaGate(object sender, EventArgs args)
         {
+            MapScroll.ScrollToAsync(0, 0, false);
             MapLayout.Children.Clear();
 
             var mainMap = new Image

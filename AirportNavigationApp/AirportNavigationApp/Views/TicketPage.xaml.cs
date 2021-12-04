@@ -78,7 +78,7 @@ namespace AirportNavigationApp.Views
                 }
             }
             if (!flightFound) {
-                DisplayAlert("Flight Not Found", "Sorry, we could not locate your flight. Please ensure your flight number is correct and your departure airport is selected.", "OK");
+               await DisplayAlert("Flight Not Found", "Sorry, we could not locate your flight. Please ensure your flight number is correct and your departure airport is selected.", "OK");
             }
 
         }
@@ -106,18 +106,23 @@ namespace AirportNavigationApp.Views
             {
                 App._Airport = "TPA";
             }
+            resetGrid();
+        }
+
+        public void resetGrid() {
+            entry.Text = null;
+            Destination = "N/A";
+            Airline = "N/A";
+            Terminal = "N/A";
+            DepartureTime = "N/A";
+            Status = "N/A";
         }
 
         public TicketPage()
         {
             InitializeComponent();
             BindingContext = this;
-
-            Destination = "N/A";
-            Airline = "N/A";
-            Terminal = "N/A";
-            DepartureTime = "N/A";
-            Status = "N/A";
+            resetGrid();
         }
     }
 }

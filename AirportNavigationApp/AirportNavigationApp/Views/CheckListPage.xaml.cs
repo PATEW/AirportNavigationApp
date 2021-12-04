@@ -153,8 +153,16 @@ namespace AirportNavigationApp.Views
             addItemRow();
         }
 
-        public void onCheck(object sender, EventArgs e) {
-
+        public void onCheck(object sender, EventArgs e){
+            CheckBox checkBox = sender as CheckBox;
+            Label label = checklist.Children.ElementAt(checklist.Children.IndexOf(checkBox) - 1) as Label;
+            if (label.TextDecorations.Equals(TextDecorations.None))
+            {
+                label.TextDecorations = TextDecorations.Strikethrough;
+            }
+            else {
+                label.TextDecorations = TextDecorations.None;
+            }
         }
     }
 }

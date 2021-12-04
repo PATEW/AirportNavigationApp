@@ -1,24 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:pinch="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage"
              x:Class="AirportNavigationApp.Views.SettingsPage"
-             BackgroundColor="#F0F0F0">
-    <ContentPage.Content>
-        <StackLayout>
-            <StackLayout>
-                <Label Text="{Binding ViewMessage}" TextColor="White" FontSize ="16" HorizontalTextAlignment="Center"/>
-                <ScrollView x:Name="MapScroll" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Orientation="Both">
-                    <pinch:PinchZoom>
-                        <pinch:PinchZoom.Content>
-                            <AbsoluteLayout>
-                                <Image Source="PHX.png"/>
-                                <ImageButton Source="pin_Info.png" AbsoluteLayout.LayoutBounds="0.94, 0.67, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" BackgroundColor="Transparent"/>
-                            </AbsoluteLayout>
-                        </pinch:PinchZoom.Content>
-                    </pinch:PinchZoom>
-                </ScrollView>
+             BackgroundColor="#565656">
+
+    <Shell.TitleView>
+        <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text="               About Page" FontSize="30" TextColor="#FFFFFF"/>
+    </Shell.TitleView>
+
+    <ScrollView>
+        <StackLayout Padding="15,0,15,0">
+
+            <Label Text="TRP Instructions" HorizontalOptions="Center" FontSize="25" TextColor="#FFFFFF" TextDecorations="None" FontAttributes="Bold" Padding="0, 15, 15, 0"/>
+
+            <Picker x:Name="picker"
+                    Title="Instructions For:"
+                    TitleColor="White"
+                    TextColor="White"
+                    SelectedIndexChanged="OnPickerSelectedIndexChanged"
+                    HorizontalOptions="StartAndExpand"
+                    HorizontalTextAlignment="Start"
+                    FontAttributes="Bold"
+                    >
+                <Picker.Items>
+                    <x:String>Ticket Page</x:String>
+                    <x:String>Checklist Page</x:String>
+                    <x:String>Map Page</x:String>
+                    <x:String>Flights Page</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <StackLayout x:Name="instructionsView">
+                <Image Source="instructions.png" HorizontalOptions ="Center"/>
             </StackLayout>
+
+            <Label Text="About TRP" HorizontalOptions="Center" FontSize="25" TextColor="#FFFFFF" TextDecorations="None" FontAttributes="Bold" Padding="0, 15, 15, 0"/>
+
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

@@ -46,7 +46,7 @@ namespace AirportNavigationApp.Views
             {
                 maxLines = 30;
                 minLines = 0;
-                ViewMessage = " Flight Information For: " + App._Airport;
+                ViewMessage = "     Flights Departing: " + App._Airport;
                 updateFlightInfo();
                 updateGrid();
             }
@@ -537,6 +537,7 @@ namespace AirportNavigationApp.Views
             minLines += 30;
             // update the grid again
             updateGrid();
+            flightView.ScrollToAsync(0, 0, true);
         }
 
 
@@ -547,6 +548,7 @@ namespace AirportNavigationApp.Views
             minLines -= 30;
             // update the grid again
             updateGrid();
+            flightView.ScrollToAsync(0, 0, true);
         }
 
     }

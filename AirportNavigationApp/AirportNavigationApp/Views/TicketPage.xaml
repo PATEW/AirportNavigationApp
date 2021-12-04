@@ -5,7 +5,7 @@
              BackgroundColor="#595959">
 
     <Shell.TitleView>
-        <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text="         Ticket Information" FontSize="30" TextColor="#FFFFFF"/>
+        <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text="        Ticket Information" FontSize="30" TextColor="#FFFFFF"/>
     </Shell.TitleView>
 
     <ContentPage.Resources>
