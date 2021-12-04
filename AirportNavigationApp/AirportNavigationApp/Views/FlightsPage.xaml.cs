@@ -1,13 +1,5 @@
-﻿using AirportNavigationApp.Models;
-using AirportNavigationApp.ViewModels;
-using AirportNavigationApp.Views;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Text.RegularExpressions;
@@ -18,7 +10,10 @@ namespace AirportNavigationApp.Views
 
     public partial class FlightsPage : ContentPage
     {
+        // Message displayed in the page header
         public string viewMessage = "Select Airport on Ticket Page";
+
+        // Lists to store flight data
         public List<string> listAirline;
         public List<string> listFlightNum;
         public List<string> listDestination;
@@ -31,29 +26,39 @@ namespace AirportNavigationApp.Views
         int maxLines = 30;
         int minLines = 0;
 
+        // Method to initialize a flights page
         public FlightsPage()
         {
             InitializeComponent();
             BindingContext = this;
+            // Create permanent header for flights grid.
             createHeader();
         }
 
-        protected override async void OnAppearing()
+        // Method to update flight grid when page is called
+        protected override void OnAppearing()
         {
+            // Complete base on appearing method
             base.OnAppearing();
-
+            
+            // Update the grid if the user has selected an airport
             if (!App._Airport.Equals("Please Select An Airport"))
             {
+                // Update page header to user selected airport
+                ViewMessage = "     Flights Departing: " + App._Airport;
+
+                // Update grid with first 30 flights
                 maxLines = 30;
                 minLines = 0;
-                ViewMessage = "     Flights Departing: " + App._Airport;
                 updateFlightInfo();
                 updateGrid();
             }
         }
 
+        // Update the flight information lists
         public void updateFlightInfo()
         {
+            // Initialize lists to store flight data
             listAirline = new List<string>();
             listFlightNum = new List<string>();
             listDestination = new List<string>();
@@ -181,6 +186,7 @@ namespace AirportNavigationApp.Views
             }
         }
 
+        // Create the header for the grid
         public void createHeader()
         {
             var flightNumberHeader = new Label
@@ -253,6 +259,7 @@ namespace AirportNavigationApp.Views
             Grid.SetColumnSpan(border, 6);
         }
 
+        // Update the flight grid based on the flight information lists
         public void updateGrid()
         {
             // CREATE GRID _______________________________________________________________________
@@ -264,9 +271,10 @@ namespace AirportNavigationApp.Views
 
 
             // if the listAirline.count > 30, then only display the first 30
-            if (listAirline.Count < 30) {
-                 AmountofLines = listAirline.Count;
-            } 
+            if (listAirline.Count < 30)
+            {
+                AmountofLines = listAirline.Count;
+            }
             else
             {
                 AmountofLines = maxLines;
@@ -486,7 +494,8 @@ namespace AirportNavigationApp.Views
 
             if (showNext == true && minLines < listAirline.Count)
             {
-                var showNextButton = new Button {
+                var showNextButton = new Button
+                {
 
                     Text = "Next",
                     VerticalOptions = LayoutOptions.Center,
@@ -519,17 +528,6 @@ namespace AirportNavigationApp.Views
             flightView.Content = productGrid;
         }
 
-        public string ViewMessage
-        {
-            get { return viewMessage; }
-            set
-            {
-                viewMessage = value;
-                OnPropertyChanged(nameof(ViewMessage));
-            }
-        }
-
-
         private void nextButtonAction(object sender, EventArgs e)
         {
             // change the value of maxLines/minLines and update the grid again
@@ -549,6 +547,16 @@ namespace AirportNavigationApp.Views
             // update the grid again
             updateGrid();
             flightView.ScrollToAsync(0, 0, true);
+        }
+
+        public string ViewMessage
+        {
+            get { return viewMessage; }
+            set
+            {
+                viewMessage = value;
+                OnPropertyChanged(nameof(ViewMessage));
+            }
         }
 
     }

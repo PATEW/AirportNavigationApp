@@ -20,7 +20,7 @@ namespace AirportNavigationApp.Views
             BindingContext = this;
         }
 
-        protected override async void OnAppearing()
+        protected override void OnAppearing()
         {
             base.OnAppearing();
             if (!App._Airport.Equals(oldAirport))
@@ -616,10 +616,6 @@ namespace AirportNavigationApp.Views
             {
                 scaleCurrent = scaleCurrent + 0.5;
             }
-            else
-            {
-                scaleCurrent = scaleCurrent;
-            }
         }
 
         private void ZoomOutClicked(object sender, EventArgs args)
@@ -628,11 +624,6 @@ namespace AirportNavigationApp.Views
             if (scaleCurrent >= 1)
             {
                 scaleCurrent = scaleCurrent - 0.5;
-            }
-            else
-            {
-
-                scaleCurrent = scaleCurrent;
             }
         }
 

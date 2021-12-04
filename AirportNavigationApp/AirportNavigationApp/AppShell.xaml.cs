@@ -1,6 +1,4 @@
-﻿using AirportNavigationApp.ViewModels;
-using AirportNavigationApp.Views;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 

@@ -1,6 +1,4 @@
-﻿using AirportNavigationApp.Services;
-using AirportNavigationApp.Views;
-using System;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +13,6 @@ namespace AirportNavigationApp
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 

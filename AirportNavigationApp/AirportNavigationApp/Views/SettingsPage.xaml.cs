@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,11 +7,14 @@ namespace AirportNavigationApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SettingsPage : ContentPage
     {
+
+        // Initialize settings page
         public SettingsPage()
         {
             InitializeComponent();
         }
 
+        // Update user viewed instructions when picker index is changed
         private void OnPickerSelectedIndexChanged(object sender, EventArgs e)
         {
             Picker picker = sender as Picker;
