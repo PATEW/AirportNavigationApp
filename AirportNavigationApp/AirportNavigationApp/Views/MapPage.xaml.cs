@@ -586,18 +586,6 @@ namespace AirportNavigationApp.Views
             restroomButton.Clicked += restroomAlert;
             AbsoluteLayout.SetLayoutBounds(restroomButton, new Rectangle(0.47, 0.73, 100, 100));
             AbsoluteLayout.SetLayoutFlags(restroomButton, AbsoluteLayoutFlags.PositionProportional);
-
-            MapLayout.Children.Add(mainMap);
-            MapLayout.Children.Add(terminalButton3);
-            MapLayout.Children.Add(terminalButton4);
-            MapLayout.Children.Add(dogRestroom);
-            MapLayout.Children.Add(parkingButton);
-            MapLayout.Children.Add(parkingButton1);
-            MapLayout.Children.Add(mainEnteranceButton);
-            MapLayout.Children.Add(ticketCounterButton);
-            MapLayout.Children.Add(baggageClaimButton);
-            MapLayout.Children.Add(rentalCounterButton);
-            MapLayout.Children.Add(restroomButton);
         }
 
         public string ViewMessage
