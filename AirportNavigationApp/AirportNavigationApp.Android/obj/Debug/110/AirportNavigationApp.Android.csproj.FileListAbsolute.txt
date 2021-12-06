@@ -1824,7 +1824,6 @@ C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNav
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_security.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_bar.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_food.png
-C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pins.zip
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_gate1.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_gate2.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_gate3.png
@@ -2538,4 +2537,5 @@ C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNav
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\phxterminal3.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\phxterminal4.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\instructions.png
+C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\res\drawable\pin_back.png
 C:\Users\Garbe\Source\Repos\AirportNavigationApp\AirportNavigationApp\AirportNavigationApp.Android\obj\Debug\110\AirportNavigationApp.Android.csproj.CopyComplete

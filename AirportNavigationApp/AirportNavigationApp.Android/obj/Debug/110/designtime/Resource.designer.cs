@@ -16708,9 +16708,6 @@ namespace AirportNavigationApp.Droid
 			// aapt resource value: 0x7F07009E
 			public const int PHXTerminal4 = 2131165342;
 			
-			// aapt resource value: 0x7F0700C8
-			public const int Pins = 2131165384;
-			
 			// aapt resource value: 0x7F07009F
 			public const int Pin_1 = 2131165343;
 			
@@ -16757,82 +16754,85 @@ namespace AirportNavigationApp.Droid
 			public const int Pin_9 = 2131165357;
 			
 			// aapt resource value: 0x7F0700AE
-			public const int Pin_Baggage = 2131165358;
+			public const int Pin_back = 2131165358;
 			
 			// aapt resource value: 0x7F0700AF
-			public const int pin_bar = 2131165359;
+			public const int Pin_Baggage = 2131165359;
 			
 			// aapt resource value: 0x7F0700B0
-			public const int Pin_CarRental = 2131165360;
+			public const int pin_bar = 2131165360;
 			
 			// aapt resource value: 0x7F0700B1
-			public const int pin_DogRestroom = 2131165361;
+			public const int Pin_CarRental = 2131165361;
 			
 			// aapt resource value: 0x7F0700B2
-			public const int pin_escalator = 2131165362;
+			public const int pin_DogRestroom = 2131165362;
 			
 			// aapt resource value: 0x7F0700B3
-			public const int pin_food = 2131165363;
+			public const int pin_escalator = 2131165363;
 			
 			// aapt resource value: 0x7F0700B4
-			public const int Pin_Gate1 = 2131165364;
+			public const int pin_food = 2131165364;
 			
 			// aapt resource value: 0x7F0700B5
-			public const int Pin_Gate10 = 2131165365;
+			public const int Pin_Gate1 = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int Pin_Gate11 = 2131165366;
+			public const int Pin_Gate10 = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int Pin_Gate12 = 2131165367;
+			public const int Pin_Gate11 = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int Pin_Gate13 = 2131165368;
+			public const int Pin_Gate12 = 2131165368;
 			
 			// aapt resource value: 0x7F0700B9
-			public const int Pin_Gate14 = 2131165369;
+			public const int Pin_Gate13 = 2131165369;
 			
 			// aapt resource value: 0x7F0700BA
-			public const int Pin_Gate15 = 2131165370;
+			public const int Pin_Gate14 = 2131165370;
 			
 			// aapt resource value: 0x7F0700BB
-			public const int Pin_Gate2 = 2131165371;
+			public const int Pin_Gate15 = 2131165371;
 			
 			// aapt resource value: 0x7F0700BC
-			public const int Pin_Gate3 = 2131165372;
+			public const int Pin_Gate2 = 2131165372;
 			
 			// aapt resource value: 0x7F0700BD
-			public const int Pin_Gate4 = 2131165373;
+			public const int Pin_Gate3 = 2131165373;
 			
 			// aapt resource value: 0x7F0700BE
-			public const int Pin_Gate5 = 2131165374;
+			public const int Pin_Gate4 = 2131165374;
 			
 			// aapt resource value: 0x7F0700BF
-			public const int Pin_Gate6 = 2131165375;
+			public const int Pin_Gate5 = 2131165375;
 			
 			// aapt resource value: 0x7F0700C0
-			public const int Pin_Gate7 = 2131165376;
+			public const int Pin_Gate6 = 2131165376;
 			
 			// aapt resource value: 0x7F0700C1
-			public const int Pin_Gate8 = 2131165377;
+			public const int Pin_Gate7 = 2131165377;
 			
 			// aapt resource value: 0x7F0700C2
-			public const int Pin_Gate9 = 2131165378;
+			public const int Pin_Gate8 = 2131165378;
 			
 			// aapt resource value: 0x7F0700C3
-			public const int Pin_Info = 2131165379;
+			public const int Pin_Gate9 = 2131165379;
 			
 			// aapt resource value: 0x7F0700C4
-			public const int pin_restroom = 2131165380;
+			public const int Pin_Info = 2131165380;
 			
 			// aapt resource value: 0x7F0700C5
-			public const int pin_security = 2131165381;
+			public const int pin_restroom = 2131165381;
 			
 			// aapt resource value: 0x7F0700C6
-			public const int Pin_Service = 2131165382;
+			public const int pin_security = 2131165382;
 			
 			// aapt resource value: 0x7F0700C7
-			public const int Pin_Shop = 2131165383;
+			public const int Pin_Service = 2131165383;
+			
+			// aapt resource value: 0x7F0700C8
+			public const int Pin_Shop = 2131165384;
 			
 			// aapt resource value: 0x7F0700C9
 			public const int preference_list_divider_material = 2131165385;

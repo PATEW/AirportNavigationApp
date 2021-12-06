@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+    
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AirportNavigationApp.Views.TicketPage"
              BackgroundColor="#595959">
 
     <Shell.TitleView>
-        <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text="        Ticket Information" FontSize="30" TextColor="#FFFFFF"/>
+        <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text=" Ticket Information" FontSize="25" TextColor="#FFFFFF"/>
     </Shell.TitleView>
 
     <ContentPage.Resources>
@@ -69,5 +70,4 @@
         <Image Source="airport_art.png" Margin="0,0,0,0" />
 
     </StackLayout>
-
 </ContentPage>

@@ -11,7 +11,7 @@ namespace AirportNavigationApp.Views
     public partial class FlightsPage : ContentPage
     {
         // Message displayed in the page header
-        public string viewMessage = "Select Airport on Ticket Page";
+        public string viewMessage = " Select Airport on Ticket Page";
 
         // Lists to store flight data
         public List<string> listAirline;
@@ -26,7 +26,18 @@ namespace AirportNavigationApp.Views
         int maxLines = 30;
         int minLines = 0;
 
-        // Method to initialize a flights page
+        // Properties.
+        public string ViewMessage
+        {
+            get { return viewMessage; }
+            set
+            {
+                viewMessage = value;
+                OnPropertyChanged(nameof(ViewMessage));
+            }
+        }
+
+        // Method to initialize FlightsPage
         public FlightsPage()
         {
             InitializeComponent();
@@ -45,7 +56,7 @@ namespace AirportNavigationApp.Views
             if (!App._Airport.Equals("Please Select An Airport"))
             {
                 // Update page header to user selected airport
-                ViewMessage = "     Flights Departing: " + App._Airport;
+                ViewMessage = " Flights Departing: " + App._Airport;
 
                 // Update grid with first 30 flights
                 maxLines = 30;
@@ -548,16 +559,5 @@ namespace AirportNavigationApp.Views
             updateGrid();
             flightView.ScrollToAsync(0, 0, true);
         }
-
-        public string ViewMessage
-        {
-            get { return viewMessage; }
-            set
-            {
-                viewMessage = value;
-                OnPropertyChanged(nameof(ViewMessage));
-            }
-        }
-
     }
 }

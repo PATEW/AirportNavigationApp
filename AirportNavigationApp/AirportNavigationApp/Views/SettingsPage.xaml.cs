@@ -8,7 +8,7 @@ namespace AirportNavigationApp.Views
     public partial class SettingsPage : ContentPage
     {
 
-        // Initialize settings page
+        // Initialize SettingsPage
         public SettingsPage()
         {
             InitializeComponent();

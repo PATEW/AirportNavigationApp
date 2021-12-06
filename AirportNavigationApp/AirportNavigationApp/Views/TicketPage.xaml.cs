@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,6 +6,7 @@ namespace AirportNavigationApp.Views
 {
     public partial class TicketPage : ContentPage
     {
+        // Attributes
         private string destination;
         private string airline;
         private string terminal;
@@ -14,6 +14,7 @@ namespace AirportNavigationApp.Views
         private string status;
         private string flightNum;
 
+        // Properties
         public string Destination {
             get { return destination; }
             set 
@@ -22,7 +23,6 @@ namespace AirportNavigationApp.Views
                 OnPropertyChanged(nameof(Destination));
 }
         }
-
         public string Airline {
             get { return airline; }
             set
@@ -31,7 +31,6 @@ namespace AirportNavigationApp.Views
                 OnPropertyChanged(nameof(Airline)); 
             }
         }
-
         public string Terminal {
             get { return terminal; }
             set
@@ -40,7 +39,6 @@ namespace AirportNavigationApp.Views
                 OnPropertyChanged(nameof(Terminal));
             }
         }
-
         public string Status
         {
             get { return status; }
@@ -50,7 +48,6 @@ namespace AirportNavigationApp.Views
                 OnPropertyChanged(nameof(Status));
             }
         }
-
         public string DepartureTime {
             get { return departureTime; }
             set
@@ -59,14 +56,25 @@ namespace AirportNavigationApp.Views
                 OnPropertyChanged(nameof(DepartureTime));
             }
         }
+        
+        // Initialize TicketPage.
+        public TicketPage()
+        {
+            InitializeComponent();
+            BindingContext = this;
+            resetGrid();
+        }
 
+        // Method to fill grid with flight information based on flight number.
         async void OnEnterClicked(object sender, EventArgs args)
         {
             flightNum = entry.Text;
             FlightsPage flightPage = new FlightsPage();
             flightPage.updateFlightInfo();
             bool flightFound = false;
+            // Loop for every departing flight at user selected airport.
             for(int i = 0; i < flightPage.listFlightNum.Count; i++) {
+                // Check flights for user inputeed flight number.
                 if (flightPage.listFlightNum[i].Equals(flightNum)) {
                     flightFound = true;
                     Destination = flightPage.listDestination[i];
@@ -77,12 +85,14 @@ namespace AirportNavigationApp.Views
                     break;
                 }
             }
+            // Alert user if flight is not found.
             if (!flightFound) {
                await DisplayAlert("Flight Not Found", "Sorry, we could not locate your flight. Please ensure your flight number is correct and your departure airport is selected.", "OK");
             }
 
         }
 
+        // Update App._Airport when user changes selected airport.
         private void OnPickerSelectedIndexChanged(object sender, EventArgs e)
         {
             Picker picker = sender as Picker;
@@ -109,6 +119,7 @@ namespace AirportNavigationApp.Views
             resetGrid();
         }
 
+        // Return all grid values to N/A.
         public void resetGrid() {
             entry.Text = null;
             Destination = "N/A";
@@ -116,13 +127,6 @@ namespace AirportNavigationApp.Views
             Terminal = "N/A";
             DepartureTime = "N/A";
             Status = "N/A";
-        }
-
-        public TicketPage()
-        {
-            InitializeComponent();
-            BindingContext = this;
-            resetGrid();
         }
     }
 }

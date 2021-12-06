@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+    
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AirportNavigationApp.Views.SettingsPage"
              BackgroundColor="#565656">
 
     <Shell.TitleView>
-        <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text="               About Page" FontSize="30" TextColor="#FFFFFF"/>
+        <Label HorizontalOptions="Center" VerticalTextAlignment="Center" Text=" About Page" FontSize="25" TextColor="#FFFFFF"/>
     </Shell.TitleView>
 
     <ScrollView>
@@ -34,8 +35,12 @@
                 <Image Source="instructions.png" HorizontalOptions ="Center"/>
             </StackLayout>
 
-            <Label Text="About TRP" HorizontalOptions="Center" FontSize="25" TextColor="#FFFFFF" TextDecorations="None" FontAttributes="Bold" Padding="0, 15, 15, 0"/>
-
+            <StackLayout Margin="0,0,0,15">
+                <Label Text="About TRP" HorizontalOptions="Center" FontSize="24" TextColor="#FFFFFF" TextDecorations="None" FontAttributes="Bold" Padding="0, 0, 15, 0"/>
+                <Label Text="Trp was a collaborative project created by: Troy Clifford, Kyle Garber, RoseEllen Hoke, Olivia Meholic, Jared O'Shea, Clay Pate, Calla Robison, and Hunter Swearingin." HorizontalOptions="Fill" FontSize="15" TextColor="#FFFFFF" TextDecorations="None" Padding="0, 5, 15, 0"/>
+                <Label Text="If you would like to report a bug, suggest a feature, ask a question, etc. please send us an email at TrpAppQuestions@gmail.com" HorizontalOptions="Center" FontSize="15" TextColor="#FFFFFF" TextDecorations="None" Padding="0, 0, 15, 0"/>
+            </StackLayout>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

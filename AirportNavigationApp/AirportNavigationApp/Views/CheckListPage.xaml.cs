@@ -9,11 +9,13 @@ namespace AirportNavigationApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CheckListPage : ContentPage
     {
-
+        
+        // Attributes.
         public Grid checklist;
         public List<string> checklistItems;
         public Entry newItem;
 
+        // Initialize ChecklistPage.
         public CheckListPage()
         {
             InitializeComponent();
@@ -22,6 +24,7 @@ namespace AirportNavigationApp.Views
             CreateChecklist();
         }
 
+        // Create the checklist grid structure.
         public void CreateChecklist()
         {
 
@@ -86,7 +89,8 @@ namespace AirportNavigationApp.Views
 
             Checklist.Content = checklist;
         }
-
+        
+        // Add item to checklist grid.
         public void addItemRow()
         {
             newItem = new Entry
@@ -122,6 +126,7 @@ namespace AirportNavigationApp.Views
             checklist.Children.Add(border3, 1, checklistItems.Count);
         }
 
+        // Handle click of newItemButton.
         private void newItemButtonClicked(object sender, EventArgs e)
         {
             checklistItems.Add(newItem.Text);
@@ -150,6 +155,7 @@ namespace AirportNavigationApp.Views
             addItemRow();
         }
 
+        // Cross or uncross out text.
         public void onCheck(object sender, EventArgs e){
             CheckBox checkBox = sender as CheckBox;
             Label label = checklist.Children.ElementAt(checklist.Children.IndexOf(checkBox) - 1) as Label;
