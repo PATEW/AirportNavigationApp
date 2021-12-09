@@ -10,16 +10,10 @@ int attr fontStyle 0x0
 int attr fontVariationSettings 0x0
 int attr fontWeight 0x0
 int attr ttcIndex 0x0
-int color browser_actions_bg_grey 0x0
-int color browser_actions_divider_color 0x0
-int color browser_actions_text_color 0x0
-int color browser_actions_title_color 0x0
 int color notification_action_color_filter 0x0
 int color notification_icon_bg_color 0x0
 int color ripple_material_light 0x0
 int color secondary_text_default_material_light 0x0
-int dimen browser_actions_context_menu_max_width 0x0
-int dimen browser_actions_context_menu_min_padding 0x0
 int dimen compat_button_inset_horizontal_material 0x0
 int dimen compat_button_inset_vertical_material 0x0
 int dimen compat_button_padding_horizontal_material 0x0
@@ -42,6 +36,7 @@ int dimen notification_small_icon_size_as_large 0x0
 int dimen notification_subtext_size 0x0
 int dimen notification_top_pad 0x0
 int dimen notification_top_pad_large_text 0x0
+int drawable abc_vector_test 0x0
 int drawable notification_action_background 0x0
 int drawable notification_bg 0x0
 int drawable notification_bg_low 0x0
@@ -94,11 +89,6 @@ int id action_text 0x0
 int id actions 0x0
 int id async 0x0
 int id blocking 0x0
-int id browser_actions_header_text 0x0
-int id browser_actions_menu_item_icon 0x0
-int id browser_actions_menu_item_text 0x0
-int id browser_actions_menu_items 0x0
-int id browser_actions_menu_view 0x0
 int id chronometer 0x0
 int id dialog_button 0x0
 int id forever 0x0
@@ -127,8 +117,6 @@ int id text2 0x0
 int id time 0x0
 int id title 0x0
 int integer status_bar_notification_info_maxnum 0x0
-int layout browser_actions_context_menu_page 0x0
-int layout browser_actions_context_menu_row 0x0
 int layout custom_dialog 0x0
 int layout notification_action 0x0
 int layout notification_action_tombstone 0x0
@@ -136,10 +124,6 @@ int layout notification_template_custom_big 0x0
 int layout notification_template_icon_group 0x0
 int layout notification_template_part_chronometer 0x0
 int layout notification_template_part_time 0x0
-int string copy_toast_msg 0x0
-int string fallback_menu_item_copy_link 0x0
-int string fallback_menu_item_open_in_browser 0x0
-int string fallback_menu_item_share_link 0x0
 int string status_bar_notification_info_overflow 0x0
 int style TextAppearance_Compat_Notification 0x0
 int style TextAppearance_Compat_Notification_Info 0x0
@@ -148,6 +132,21 @@ int style TextAppearance_Compat_Notification_Time 0x0
 int style TextAppearance_Compat_Notification_Title 0x0
 int style Widget_Compat_NotificationActionContainer 0x0
 int style Widget_Compat_NotificationActionText 0x0
+int[] styleable AnimatedStateListDrawableCompat { 0x1010196, 0x101011c, 0x101030c, 0x101030d, 0x1010195, 0x1010194 }
+int styleable AnimatedStateListDrawableCompat_android_constantSize 0
+int styleable AnimatedStateListDrawableCompat_android_dither 1
+int styleable AnimatedStateListDrawableCompat_android_enterFadeDuration 2
+int styleable AnimatedStateListDrawableCompat_android_exitFadeDuration 3
+int styleable AnimatedStateListDrawableCompat_android_variablePadding 4
+int styleable AnimatedStateListDrawableCompat_android_visible 5
+int[] styleable AnimatedStateListDrawableItem { 0x1010199, 0x10100d0 }
+int styleable AnimatedStateListDrawableItem_android_drawable 0
+int styleable AnimatedStateListDrawableItem_android_id 1
+int[] styleable AnimatedStateListDrawableTransition { 0x1010199, 0x101044a, 0x101044b, 0x1010449 }
+int styleable AnimatedStateListDrawableTransition_android_drawable 0
+int styleable AnimatedStateListDrawableTransition_android_fromId 1
+int styleable AnimatedStateListDrawableTransition_android_reversible 2
+int styleable AnimatedStateListDrawableTransition_android_toId 3
 int[] styleable ColorStateListItem { 0x0, 0x101031f, 0x10101a5 }
 int styleable ColorStateListItem_alpha 0
 int styleable ColorStateListItem_android_alpha 1
@@ -186,4 +185,12 @@ int styleable GradientColor_android_type 11
 int[] styleable GradientColorItem { 0x10101a5, 0x1010514 }
 int styleable GradientColorItem_android_color 0
 int styleable GradientColorItem_android_offset 1
-int xml image_share_filepaths 0x0
+int[] styleable StateListDrawable { 0x1010196, 0x101011c, 0x101030c, 0x101030d, 0x1010195, 0x1010194 }
+int styleable StateListDrawable_android_constantSize 0
+int styleable StateListDrawable_android_dither 1
+int styleable StateListDrawable_android_enterFadeDuration 2
+int styleable StateListDrawable_android_exitFadeDuration 3
+int styleable StateListDrawable_android_variablePadding 4
+int styleable StateListDrawable_android_visible 5
+int[] styleable StateListDrawableItem { 0x1010199 }
+int styleable StateListDrawableItem_android_drawable 0

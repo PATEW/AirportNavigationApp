@@ -14,12 +14,12 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
-                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.BackgroundColor" Value="#00A9CD" />
+                <Setter Property="Shell.ForegroundColor" Value="#595959" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="#00A9CD" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="White"/>
@@ -29,18 +29,13 @@
         </ResourceDictionary>
     </Shell.Resources>
 
+    <!-- Navigation bar displayed at the bottom of the app. -->
     <TabBar>
-        <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Ticket"   Icon ="icon_ticket.png" ContentTemplate="{DataTemplate local:TicketPage}" />
+        <ShellContent Title="Checklist" Icon="icon_checklist.png" ContentTemplate="{DataTemplate local:CheckListPage}" />
+        <ShellContent Title="Map"      Icon ="icon_map.png" Route="MapPage" ContentTemplate="{DataTemplate local:MapPage}"/>
+        <ShellContent Title="Flights"  Icon ="icon_flights.png" ContentTemplate="{DataTemplate local:FlightsPage}" />
+        <ShellContent Title="About"  Icon ="icon_settings.png" ContentTemplate="{DataTemplate local:SettingsPage}" />
     </TabBar>
-
-    <!--
-        If you would like to navigate to this content you can do so by calling
-        await Shell.Current.GoToAsync("//LoginPage");
-    -->
-    <TabBar>
-        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-    </TabBar>
-
 
 </Shell>

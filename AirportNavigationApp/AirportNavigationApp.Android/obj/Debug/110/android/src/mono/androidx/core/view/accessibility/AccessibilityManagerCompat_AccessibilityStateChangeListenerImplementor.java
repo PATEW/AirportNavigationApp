@@ -11,9 +11,9 @@ public class AccessibilityManagerCompat_AccessibilityStateChangeListenerImplemen
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onAccessibilityStateChanged:(Z)V:GetOnAccessibilityStateChanged_ZHandler:AndroidX.Core.View.Accessibiity.AccessibilityManagerCompat/IAccessibilityStateChangeListenerInvoker, Xamarin.AndroidX.Core\n" +
+			"n_onAccessibilityStateChanged:(Z)V:GetOnAccessibilityStateChanged_ZHandler:AndroidX.Core.View.Accessibility.AccessibilityManagerCompat/IAccessibilityStateChangeListenerInvoker, Xamarin.AndroidX.Core\n" +
 			"";
-		mono.android.Runtime.register ("AndroidX.Core.View.Accessibiity.AccessibilityManagerCompat+IAccessibilityStateChangeListenerImplementor, Xamarin.AndroidX.Core", AccessibilityManagerCompat_AccessibilityStateChangeListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("AndroidX.Core.View.Accessibility.AccessibilityManagerCompat+IAccessibilityStateChangeListenerImplementor, Xamarin.AndroidX.Core", AccessibilityManagerCompat_AccessibilityStateChangeListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class AccessibilityManagerCompat_AccessibilityStateChangeListenerImplemen
 	{
 		super ();
 		if (getClass () == AccessibilityManagerCompat_AccessibilityStateChangeListenerImplementor.class)
-			mono.android.TypeManager.Activate ("AndroidX.Core.View.Accessibiity.AccessibilityManagerCompat+IAccessibilityStateChangeListenerImplementor, Xamarin.AndroidX.Core", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("AndroidX.Core.View.Accessibility.AccessibilityManagerCompat+IAccessibilityStateChangeListenerImplementor, Xamarin.AndroidX.Core", "", this, new java.lang.Object[] {  });
 	}
 
 

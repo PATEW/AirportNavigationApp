@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AirportNavigationApp",
+    "\\AirportNavigationApp\\AirportNavigationApp",
+    "\\AirportNavigationApp\\AirportNavigationApp.Android",
+    "\\AirportNavigationApp\\AirportNavigationApp.Android\\Resources",
+    "\\AirportNavigationApp\\AirportNavigationApp\\Views"
   ],
-  "SelectedNode": "\\AirportNavigationApp.sln",
+  "SelectedNode": "\\AirportNavigationApp\\AirportNavigationApp\\Views\\FlightsPage.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

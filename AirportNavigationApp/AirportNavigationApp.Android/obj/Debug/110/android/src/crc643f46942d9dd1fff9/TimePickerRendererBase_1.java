@@ -17,11 +17,11 @@ public abstract class TimePickerRendererBase_1
 	}
 
 
-	public TimePickerRendererBase_1 (android.content.Context p0, android.util.AttributeSet p1, int p2)
+	public TimePickerRendererBase_1 (android.content.Context p0)
 	{
-		super (p0, p1, p2);
+		super (p0);
 		if (getClass () == TimePickerRendererBase_1.class)
-			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.TimePickerRendererBase`1, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
+			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.TimePickerRendererBase`1, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android", this, new java.lang.Object[] { p0 });
 	}
 
 
@@ -33,11 +33,11 @@ public abstract class TimePickerRendererBase_1
 	}
 
 
-	public TimePickerRendererBase_1 (android.content.Context p0)
+	public TimePickerRendererBase_1 (android.content.Context p0, android.util.AttributeSet p1, int p2)
 	{
-		super (p0);
+		super (p0, p1, p2);
 		if (getClass () == TimePickerRendererBase_1.class)
-			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.TimePickerRendererBase`1, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android", this, new java.lang.Object[] { p0 });
+			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.TimePickerRendererBase`1, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
 	}
 
 

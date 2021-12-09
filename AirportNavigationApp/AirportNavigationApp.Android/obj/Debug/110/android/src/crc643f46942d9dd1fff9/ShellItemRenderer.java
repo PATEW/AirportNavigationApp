@@ -5,7 +5,7 @@ public class ShellItemRenderer
 	extends crc643f46942d9dd1fff9.ShellItemRendererBase
 	implements
 		mono.android.IGCUserPeer,
-		com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemSelectedListener
+		com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener
 {
 /** @hide */
 	public static final String __md_methods;
@@ -13,7 +13,7 @@ public class ShellItemRenderer
 		__md_methods = 
 			"n_onCreateView:(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;:GetOnCreateView_Landroid_view_LayoutInflater_Landroid_view_ViewGroup_Landroid_os_Bundle_Handler\n" +
 			"n_onDestroy:()V:GetOnDestroyHandler\n" +
-			"n_onNavigationItemSelected:(Landroid/view/MenuItem;)Z:GetOnNavigationItemSelected_Landroid_view_MenuItem_Handler:Google.Android.Material.BottomNavigation.BottomNavigationView/IOnNavigationItemSelectedListenerInvoker, Xamarin.Google.Android.Material\n" +
+			"n_onNavigationItemSelected:(Landroid/view/MenuItem;)Z:GetOnNavigationItemSelected_Landroid_view_MenuItem_Handler:Google.Android.Material.Navigation.NavigationBarView/IOnItemSelectedListenerInvoker, Xamarin.Google.Android.Material\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.ShellItemRenderer, Xamarin.Forms.Platform.Android", ShellItemRenderer.class, __md_methods);
 	}

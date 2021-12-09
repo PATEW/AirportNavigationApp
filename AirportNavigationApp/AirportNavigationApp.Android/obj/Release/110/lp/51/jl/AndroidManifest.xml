@@ -19,7 +19,7 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="29" />
+        android:targetSdkVersion="30" />
 
     <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" />
 

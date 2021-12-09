@@ -15,10 +15,10 @@
   ~ limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="androidx.lifecycle" >
+    package="androidx.lifecycle.runtime" >
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="28" />
+        android:targetSdkVersion="30" />
 
 </manifest>
