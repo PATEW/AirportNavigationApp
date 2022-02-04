@@ -5,6 +5,9 @@
 TRP is an android phone application created as a **class project** for the **SE 300 class**. The app is designed to help users navigate large airports. Ticket information, departing flights, maps, and amenity locations in the airport are all easily viewable to the user.
 
 ## Features
+(Some photos taken from in development versions of TRP)
+
+
 ⠀⠀⠀⠀⠀⠀
 ![Ticket Page](AirportNavigationApp/Assets/ticketpage4.gif)
 ⠀⠀⠀⠀⠀⠀
@@ -13,6 +16,22 @@ TRP is an android phone application created as a **class project** for the **SE 
 ⠀⠀⠀⠀⠀⠀• Enter your airport and flight number to see  relevant information to your flight!
 
 ⠀⠀⠀⠀⠀⠀• View a multi-layered map of your airport with markers indicating special points of interest.
+
+
+⠀⠀⠀⠀⠀⠀
+![Checklist Page](AirportNavigationApp/Assets/checklist.gif)
+⠀⠀⠀⠀⠀⠀
+![Flights Page](AirportNavigationApp/Assets/flights.gif)
+
+⠀⠀⠀⠀⠀⠀• Keep track of common airport necessities and add your own reminders to the list.
+
+⠀⠀⠀⠀⠀⠀• See a time accurate flight table for your selected airport (live updates every time you open the tab!).
+
+
+⠀⠀⠀⠀⠀⠀
+![About Page](AirportNavigationApp/Assets/about.gif)
+
+⠀⠀⠀⠀⠀⠀• Read detailed information about each pane, credits and feedback information.
 
 ## Supported Airports
 Each airport must be manually added into our app. Because of this, only the following airports are supported in Trp at this time:
